@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Урок 1. Позиционирование элементов. Практическая верстка.</title>
+    <meta name="description" content="Домашнее задание к уроку 1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:image" content="images/dist/preview.jpg">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__info"><a class="logo" href="/"><img class="logo__img" src="images/dist/logo.svg" alt="logotype company"></a>
+            <form class="header__serch search" action="search">
+              <details class="search__details">
+                <summary class="search__summary">Browse</summary>
+                <div class="search__dropdown">
+                  <h5>Man</h5>
+                  <h5>Woman</h5>
+                </div>
+              </details>
+              <input class="search__value" type="search" placeholder="Search for Item...">
+              <button class="search__btn icon icon-search" type="submit"></button>
+            </form>
+          </div>
+          <div class="header__user user">
+            <button class="user__btn icon icon-cart"></button>
+            <details class="user__details">
+              <summary class="user__summary">My Account</summary>
+              <ul class="user__dropdown">
+                <li class="user__item"><a class="user__link" href="#">Login / Register</a></li>
+                <li class="user__item"><a class="user__link" href="#">Support</a></li>
+              </ul>
+            </details>
+          </div>
+        </div>
+      </div>
+      <nav class="navigation">
+        <div class="container">
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link menu__link_home" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Man</a>
+              <div class="submenu">
+                <div class="submenu__row">
+                  <div class="submenu__item">
+                    <h5 class="submenu__item-title">Man</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a><a class="submenu__link" href="#">Blazers</a><a class="submenu__link" href="#">Denim</a><a class="submenu__link" href="#">Leggings/Pants</a><a class="submenu__link" href="#">Skirts/Shorts</a><a class="submenu__link" href="#">Accessories</a>
+                  </div>
+                </div>
+                <div class="submenu__row">
+                  <div class="submenu__item submenu__item_mb">
+                    <h5 class="submenu__item-title">Man</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a>
+                  </div>
+                  <div class="submenu__item">
+                    <h5 class="submenu__item-title">Man</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a>
+                  </div>
+                </div>
+                <div class="submenu__row">
+                  <div class="submenu__item submenu__item_mb">
+                    <h5 class="submenu__item-title">Man</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a>
+                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale">
+                    <p class="submenu__text">Super sale!</p></a>
+                </div>
+              </div>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Women</a>
+              <div class="submenu">
+                <div class="submenu__row">
+                  <div class="submenu__item">
+                    <h5 class="submenu__item-title">Woman</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a><a class="submenu__link" href="#">Blazers</a><a class="submenu__link" href="#">Denim</a><a class="submenu__link" href="#">Leggings/Pants</a><a class="submenu__link" href="#">Skirts/Shorts</a><a class="submenu__link" href="#">Accessories</a>
+                  </div>
+                </div>
+                <div class="submenu__row">
+                  <div class="submenu__item submenu__item_mb">
+                    <h5 class="submenu__item-title">Woman</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a>
+                  </div>
+                  <div class="submenu__item">
+                    <h5 class="submenu__item-title">Woman</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a>
+                  </div>
+                </div>
+                <div class="submenu__row">
+                  <div class="submenu__item submenu__item_mb">
+                    <h5 class="submenu__item-title">Woman</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a>
+                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale">
+                    <p class="submenu__text">Super sale!</p></a>
+                </div>
+              </div>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Kids</a>
+              <div class="submenu">
+                <div class="submenu__row">
+                  <div class="submenu__item">
+                    <h5 class="submenu__item-title">Kids</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a><a class="submenu__link" href="#">Blazers</a><a class="submenu__link" href="#">Denim</a><a class="submenu__link" href="#">Leggings/Pants</a><a class="submenu__link" href="#">Skirts/Shorts</a><a class="submenu__link" href="#">Accessories</a>
+                  </div>
+                </div>
+                <div class="submenu__row">
+                  <div class="submenu__item submenu__item_mb">
+                    <h5 class="submenu__item-title">Kids</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a>
+                  </div>
+                  <div class="submenu__item">
+                    <h5 class="submenu__item-title">Kids</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a>
+                  </div>
+                </div>
+                <div class="submenu__row">
+                  <div class="submenu__item submenu__item_mb">
+                    <h5 class="submenu__item-title">Kids</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a>
+                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale">
+                    <p class="submenu__text">Super sale!				</p></a>
+                </div>
+              </div>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Accoseriese</a>
+              <div class="submenu">
+                <div class="submenu__row">
+                  <div class="submenu__item">
+                    <h5 class="submenu__item-title">Accoseriese</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a><a class="submenu__link" href="#">Blazers</a><a class="submenu__link" href="#">Denim</a><a class="submenu__link" href="#">Leggings/Pants</a><a class="submenu__link" href="#">Skirts/Shorts</a><a class="submenu__link" href="#">Accessories</a>
+                  </div>
+                </div>
+                <div class="submenu__row">
+                  <div class="submenu__item submenu__item_mb">
+                    <h5 class="submenu__item-title">Accoseriese</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a>
+                  </div>
+                  <div class="submenu__item">
+                    <h5 class="submenu__item-title">Accoseriese</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a>
+                  </div>
+                </div>
+                <div class="submenu__row">
+                  <div class="submenu__item submenu__item_mb">
+                    <h5 class="submenu__item-title">Accoseriese</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a>
+                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale">
+                    <p class="submenu__text">Super sale!</p></a>
+                </div>
+              </div>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Featured</a>
+              <div class="submenu">
+                <div class="submenu__row">
+                  <div class="submenu__item">
+                    <h5 class="submenu__item-title">Featured</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a><a class="submenu__link" href="#">Blazers</a><a class="submenu__link" href="#">Denim</a><a class="submenu__link" href="#">Leggings/Pants</a><a class="submenu__link" href="#">Skirts/Shorts</a><a class="submenu__link" href="#">Accessories</a>
+                  </div>
+                </div>
+                <div class="submenu__row">
+                  <div class="submenu__item submenu__item_mb">
+                    <h5 class="submenu__item-title">Featured</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a>
+                  </div>
+                  <div class="submenu__item">
+                    <h5 class="submenu__item-title">Featured</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a>
+                  </div>
+                </div>
+                <div class="submenu__row">
+                  <div class="submenu__item submenu__item_mb">
+                    <h5 class="submenu__item-title">Featured</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a>
+                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale">
+                    <p class="submenu__text">Super sale!</p></a>
+                </div>
+              </div>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Hot deals</a>
+              <div class="submenu">
+                <div class="submenu__row">
+                  <div class="submenu__item">
+                    <h5 class="submenu__item-title">Hot deals</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a><a class="submenu__link" href="#">Blazers</a><a class="submenu__link" href="#">Denim</a><a class="submenu__link" href="#">Leggings/Pants</a><a class="submenu__link" href="#">Skirts/Shorts</a><a class="submenu__link" href="#">Accessories</a>
+                  </div>
+                </div>
+                <div class="submenu__row">
+                  <div class="submenu__item submenu__item_mb">
+                    <h5 class="submenu__item-title">Hot deals</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a>
+                  </div>
+                  <div class="submenu__item">
+                    <h5 class="submenu__item-title">Hot deals</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a>
+                  </div>
+                </div>
+                <div class="submenu__row">
+                  <div class="submenu__item submenu__item_mb">
+                    <h5 class="submenu__item-title">Hot deals</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="#">Tops</a><a class="submenu__link" href="#">Sweaters/Knits</a><a class="submenu__link" href="#">Jackets/Coats</a>
+                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale">
+                    <p class="submenu__text">Super sale!</p></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End navigation-->
+    </header>
+    <div class="content">
+      <header class="content__header content__header_home">
+        <div class="container">
+          <h1 class="content__title">The brand <span class="content__title_small">of luxerious <span class="pink">fashion</span></span></h1>
+        </div>
+      </header>
+      <main class="container">
+        <div class="offers">
+          <div class="offers__col"><a class="offers__card offers__card_big" href="#">
+              <h2 class="offers__title">Hot deal <span class="pink offers__title_big">for men</span></h2><img class="offers__img" src="images/dist/man.jpg" alt="man"></a><a class="offers__card" href="#">
+              <h2 class="offers__title">Luxirous & trendy <span class="pink offers__title_big">accesories</span></h2><img class="offers__img" src="images/dist/wallet.jpg" alt="wallet"></a></div>
+          <div class="offers__col"><a class="offers__card" href="#">
+              <h2 class="offers__title">30% offer <span class="pink offers__title_big">women</span></h2><img class="offers__img" src="images/dist/woman.jpg" alt="woman"></a><a class="offers__card offers__card_big" href="#">
+              <h2 class="offers__title">New arrivals <span class="pink offers__title_big">for kids</span></h2><img class="offers__img" src="images/dist/kids.jpg" alt="kids"></a></div>
+        </div>
+        <section class="products">
+          <header class="products__header">
+            <h2 class="products__title">Fetured Items</h2>
+            <p class="products__desc">Shop for items based on what we featured in this week</p>
+          </header>
+          <div class="products__body"><a class="products__item product" href="#"><img class="product__img overlay" src="images/dist/card-1.jpg" alt="product-1">
+              <div class="btn product__btn icon icon-cart">Add to Cart</div>
+              <div class="product__info">
+                <h3 class="product__title">Mango people t-shirt</h3>
+                <div class="product__price pink">$52.00</div>
+              </div></a><a class="products__item product" href="#"><img class="product__img overlay" src="images/dist/card-2.jpg" alt="product-2">
+              <div class="btn product__btn icon icon-cart">Add to Cart</div>
+              <div class="product__info">
+                <h3 class="product__title">Mango people t-shirt</h3>
+                <div class="product__price pink"> $52.00</div>
+              </div></a><a class="products__item product" href="#"><img class="product__img overlay" src="images/dist/card-3.jpg" alt="product-3">
+              <div class="btn product__btn icon icon-cart">Add to Cart</div>
+              <div class="product__info">
+                <h3 class="product__title">Mango people t-shirt</h3>
+                <div class="product__price pink"> $52.00</div>
+              </div></a><a class="products__item product" href="#"><img class="product__img overlay" src="images/dist/card-4.jpg" alt="product-4">
+              <div class="btn product__btn icon icon-cart">Add to Cart</div>
+              <div class="product__info">
+                <h3 class="product__title">Mango people t-shirt</h3>
+                <div class="product__price pink"> $52.00</div>
+              </div></a><a class="products__item product" href="#"><img class="product__img overlay" src="images/dist/card-5.jpg" alt="product-5">
+              <div class="btn product__btn icon icon-cart">Add to Cart</div>
+              <div class="product__info">
+                <h3 class="product__title">Mango people t-shirt</h3>
+                <div class="product__price pink"> $52.00</div>
+              </div></a><a class="products__item product" href="#"><img class="product__img overlay" src="images/dist/card-6.jpg" alt="product-6">
+              <div class="btn product__btn icon icon-cart">Add to Cart</div>
+              <div class="product__info">
+                <h3 class="product__title">Mango people t-shirt</h3>
+                <div class="product__price pink"> $52.00</div>
+              </div></a><a class="products__item product" href="#"><img class="product__img overlay" src="images/dist/card-7.jpg" alt="product-7">
+              <div class="btn product__btn icon icon-cart">Add to Cart</div>
+              <div class="product__info">
+                <h3 class="product__title">Mango people t-shirt</h3>
+                <div class="product__price pink"> $52.00</div>
+              </div></a><a class="products__item product" href="#"><img class="product__img overlay" src="images/dist/card-8.jpg" alt="product-8">
+              <div class="btn product__btn icon icon-cart">Add to Cart</div>
+              <div class="product__info">
+                <h3 class="product__title">Mango people t-shirt</h3>
+                <div class="product__price pink"> $52.00</div>
+              </div></a></div>
+          <footer class="products__footer">
+            <button class="btn products__btn">Browse All Product<img class="products__arrow" src="images/dist/arrow-right.svg" alt="arrow"></button>
+          </footer>
+        </section>
+        <div class="banner"><a class="banner__link" href="#"><img class="banner__img" src="images/dist/sale.jpg" alt="girl in a hat"></a>
+          <div class="conditions">
+            <div class="conditions__item icon icon-truck">
+              <h3 class="conditions__title">Free Delivery</h3>
+              <p class="conditions__desc">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </div>
+            <div class="conditions__item icon icon-sale">
+              <h3 class="conditions__title">Sales & discounts</h3>
+              <p class="conditions__desc">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </div>
+            <div class="conditions__item icon icon-corona">
+              <h3 class="conditions__title">Quality assurance</h3>
+              <p class="conditions__desc">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <section class="footer__top">
+          <div class="container">
+            <div class="footer__comments slider">
+              <div class="slider__box">
+                <figure class="slider__item"><img class="slider__img" src="images/dist/avatar.jpg" alt="photo user">
+                  <figcaption class="slider__text">
+                    <p class="slider__desc">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                    <h5 class="slider__title">Bin Burhan</h5>
+                    <p class="slider__locality">Dhaka, Bd</p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="slider__navigation"><span class="slider__btn"></span><span class="slider__btn active"></span><span class="slider__btn"></span></div>
+            </div>
+            <div class="footer__subscribe subscribe">
+              <div class="subscribe__box">
+                <h2 class="subscribe__title">Subscribe</h2>
+                <p class="subscribe__desc">For our newletter and promotion</p>
+                <form class="subscribe__form" method="POST" autocomplete="off" novalidate>
+                  <input class="subscribe__value" type="tel" name="email" placeholder="Enter Your Email" id="email">
+                  <button class="btn subscribe__btn" id="submit">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="footer__info">
+          <div class="container">
+            <div class="footer__brand"><a class="footer__logo logo" href="/"><img class="logo__img" src="images/dist/logo.svg" alt="logotype company"></a>
+              <div class="footer__desc">
+                <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
+                <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+              </div>
+            </div>
+            <ul class="footer__menu">
+              <li class="footer__menu-item">Company
+                <ul class="footer__submenu">
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Home</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Shop</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">About</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">How It Works</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Contact</a></li>
+                </ul>
+              </li>
+              <li class="footer__menu-item">Information
+                <ul class="footer__submenu">
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Tearms & Condition</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Privacy Policy</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">How to Buy</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">How to Sell</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Promotion</a></li>
+                </ul>
+              </li>
+              <li class="footer__menu-item">Shop category
+                <ul class="footer__submenu">
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Men</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Women</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Child</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Apparel</a></li>
+                  <li class="footer__submenu-item"><a class="footer__submenu-link" href="#">Brows All</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="container">
+            <p class="copyright">© 2021  Brand  All Rights Reserved.</p>
+            <div class="social"><a class="social__link" href="#"> <img class="social__img" src="images/dist/facebook-f.svg" alt="facebook"></a><a class="social__link" href="#"> <img class="social__img" src="images/dist/twitter.svg" alt="twitter"></a><a class="social__link" href="#"> <img class="social__img" src="images/dist/linkedin-in.svg" alt="linkedin"></a><a class="social__link" href="#"> <img class="social__img" src="images/dist/pinterest-p.svg" alt="pinterest"></a><a class="social__link" href="#"> <img class="social__img" src="images/dist/google-plus.svg" alt="google-plus"></a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

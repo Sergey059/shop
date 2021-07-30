@@ -1,0 +1,116 @@
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		//- base(href="/")>
+		title Урок 2. Структура HTML5, знакомство с формами
+		meta(name="description" content="Домашнее задание к уроку 2")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		link(rel="icon" href="images/favicon.png")
+		meta(property="og:image" content="images/dist/preview.jpg")
+		link(rel="stylesheet" href="css/main.min.css")
+	
+	body
+		include blocks/_header
+
+		.content
+			header.content__header.content__header_home
+				.container
+					h1.content__title The brand 
+						span.content__title_small of luxerious 
+							span.pink fashion
+			main.container
+				.offers
+					.offers__col
+						a(href="#").offers__card.offers__card_big
+							h2.offers__title Hot deal 
+								span.pink.offers__title_big for men
+							img.offers__img(src="images/dist/man.jpg", alt="man")
+						a(href="#").offers__card
+							h2.offers__title Luxirous & trendy 
+								span.pink.offers__title_big accesories
+							img.offers__img(src="images/dist/wallet.jpg", alt="wallet")
+					.offers__col
+						a(href="#").offers__card
+							h2.offers__title 30% offer 
+								span.pink.offers__title_big women
+							img.offers__img(src="images/dist/woman.jpg", alt="woman")
+						a(href="#").offers__card.offers__card_big
+							h2.offers__title New arrivals 
+								span.pink.offers__title_big for kids
+							img.offers__img(src="images/dist/kids.jpg", alt="kids")
+				section.products
+					header.products__header
+						h2.products__title Fetured Items
+						p.products__desc Shop for items based on what we featured in this week
+					.products__body
+						a(href="#").products__item.product
+							img.product__img.overlay(src="images/dist/card-1.jpg", alt="product-1")
+							.btn.product__btn.icon.icon-cart Add to Cart
+							.product__info
+								h3.product__title Mango people t-shirt
+								.product__price.pink $52.00
+						a(href="#").products__item.product
+							img.product__img.overlay(src="images/dist/card-2.jpg", alt="product-2")
+							.btn.product__btn.icon.icon-cart Add to Cart
+							.product__info
+								h3.product__title Mango people t-shirt
+								.product__price.pink  $52.00
+						a(href="#").products__item.product
+							img.product__img.overlay(src="images/dist/card-3.jpg", alt="product-3")
+							.btn.product__btn.icon.icon-cart Add to Cart
+							.product__info
+								h3.product__title Mango people t-shirt
+								.product__price.pink  $52.00
+						a(href="#").products__item.product
+							img.product__img.overlay(src="images/dist/card-4.jpg", alt="product-4")
+							.btn.product__btn.icon.icon-cart Add to Cart
+							.product__info
+								h3.product__title Mango people t-shirt
+								.product__price.pink  $52.00
+						a(href="#").products__item.product
+							img.product__img.overlay(src="images/dist/card-5.jpg", alt="product-5")
+							.btn.product__btn.icon.icon-cart Add to Cart
+							.product__info
+								h3.product__title Mango people t-shirt
+								.product__price.pink  $52.00
+						a(href="#").products__item.product
+							img.product__img.overlay(src="images/dist/card-6.jpg", alt="product-6")
+							.btn.product__btn.icon.icon-cart Add to Cart
+							.product__info
+								h3.product__title Mango people t-shirt
+								.product__price.pink  $52.00
+						a(href="#").products__item.product
+							img.product__img.overlay(src="images/dist/card-7.jpg", alt="product-7")
+							.btn.product__btn.icon.icon-cart Add to Cart
+							.product__info
+								h3.product__title Mango people t-shirt
+								.product__price.pink  $52.00
+						a(href="#").products__item.product
+							img.product__img.overlay(src="images/dist/card-8.jpg", alt="product-8")
+							.btn.product__btn.icon.icon-cart Add to Cart
+							.product__info
+								h3.product__title Mango people t-shirt
+								.product__price.pink  $52.00
+					footer.products__footer
+						button.btn.products__btn Browse All Product
+							img.products__arrow(src='images/dist/arrow-right.svg' alt='arrow')
+				.banner
+					a.banner__link(href="#")
+						img.banner__img(src="images/dist/sale.jpg", alt="girl in a hat")
+					.conditions
+						.conditions__item.icon.icon-truck
+							h3.conditions__title Free Delivery
+							p.conditions__desc Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+						.conditions__item.icon.icon-sale
+							h3.conditions__title Sales & discounts
+							p.conditions__desc Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+						.conditions__item.icon.icon-corona
+							h3.conditions__title Quality assurance
+							p.conditions__desc Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+					
+			include blocks/_footer
+
+		script(src="js/app.min.js")
+
+

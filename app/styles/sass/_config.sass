@@ -1,0 +1,166 @@
+// USER VARIABLES SECTION
+
+$accent: #d56d7d // Accent Color
+$fontsize: 14px // Body Font Size
+$textcolor: #888 // Text Color
+$textcolor-heading: #272727 // Text Color
+$lineheight: 1.71 // Document Line Height
+$lato-light: lato-light, sans-serif // User Font Family
+$lato-regular: lato-regular, sans-serif // User Font Family
+$lato-bold: lato-bold, sans-serif // User Font Family
+$lato-black: lato-black, sans-serif // User Font Family
+$lato-italic: lato-italic, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$transition: 0.3s ease
+$border-color: #ebebeb
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+//@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+//@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('lato-regular', normal, 400, '../fonts/Lato-Regular.woff2')
+@include font('lato-light', normal, 200, '../fonts/Lato-Light.woff2')
+@include font('lato-bold', normal, 700, '../fonts/Lato-Bold.woff2')
+@include font('lato-black', normal, 800, '../fonts/Lato-Black.woff2')
+@include font('lato-italic', italic, normal, '../fonts/Lato-Italic.woff2')
+
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: #a2a2a2
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+html
+	min-height: 100vh
+	height: 100%
+body
+	min-width: 320px
+	height: 100%
+	display: flex
+	flex-direction: column
+	position: relative
+	font-family: $lato-light
+	font-size: $fontsize
+	line-height: $lineheight
+	letter-spacing: 0.25px
+	color: $textcolor
+	overflow-x: hidden
+	
+.header,
+.footer
+	flex: 0 0 auto
+.content
+	flex: 1 0 auto
+
+.container
+	margin: 0 auto
+	width: 1140px
+a
+	text-decoration: none
+	transition: $transition
+ul, li
+	margin: 0
+	padding: 0
+	list-style-type: none
+details
+	position: relative
+	&[open] summary::after
+		transform: rotate(180deg)
+summary
+	list-style-type: none
+	&::after
+		content: ''
+		display: block
+		width: 9px
+		height: 9px
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		background-image: url(../images/dist/caret-down.svg)
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		outline: none
+		transition: $transition
+button
+	display: inline-block
+	position: relative
+	border: none
+	outline: none
+	background: transparent
+	cursor: pointer
+input
+	outline: none
+	border: none
+	letter-spacing: 0.25px
+.icon
+	position: relative
+	&::before
+		display: flex
+		width: 100%
+		height: 100%
+		content: ''
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+	&-search
+		&::before
+			width: 14px
+			height: 14px
+			opacity: 0.33
+	&-cart
+		&::before
+			width: 32px
+			height: 29px
+			background-image: url(../images/dist/cart.svg)
+	&-truck
+		&::before
+			width: 46px
+			height: 32px
+			background-image: url(../images/dist/truck.svg)
+	&-sale
+		&::before
+			width: 40px
+			height: 40px
+			background-image: url(../images/dist/sale.svg)
+	&-corona
+		&::before
+			width: 48px
+			height: 35px
+			background-image: url(../images/dist/corona.svg)
+.btn
+	font-family: $lato-bold
+	font-weight: 700
+	background-color: transparent
+	outline: 0
+	cursor: pointer
+	transition: $transition
+
+
