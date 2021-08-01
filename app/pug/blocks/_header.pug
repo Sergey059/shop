@@ -7,15 +7,38 @@ header.header
 				form.header__serch.search(action='search')
 					details.search__details
 						summary.search__summary Browse
+							i.icon-caret-down
 						.search__dropdown
 							h5 Man
 							h5 Woman
 					input(type='search' placeholder='Search for Item...' class="search__value")
-					button.search__btn.icon.icon-search(type='submit')
-			.header__user.user
-				button.user__btn.icon.icon-cart
-				details.user__details
+					button.search__btn(type='submit')
+						i.icon-search
+			.header__user
+				.cart
+					i.icon-cart
+					.cart__dropdown
+						ul.cart__list
+							li.cart__item
+								img.cart__img(src="images/dist/cart-1.jpg", alt="man")
+								.cart__item-body
+									p.cart__title Rebox Zane
+									p.cart__price $250
+								i.icon-cancel
+							li.cart__item
+								img.cart__img(src="images/dist/cart-2.jpg", alt="woman")
+								.cart__item-body
+									p.cart__title Rebox Zane
+									p.cart__price $250
+								i.icon-cancel
+						.total
+							.cart__total-text Total
+							.cart__total-summ $500
+						button.btn.cart__btn Checkout
+						a.btn.cart__link(href="#") Go to cart
+				details.user
 					summary.user__summary My Account
+						i.icon-caret-down
 					ul.user__dropdown
 						li.user__item
 							a.user__link(href='#') Login / Register
@@ -25,9 +48,9 @@ header.header
 		.container
 			ul.menu
 				li.menu__item
-					a.menu__link.menu__link_home(href='#') Home
+					a.menu__link.menu__link_home(href='/') Home
 				li.menu__item
-					a.menu__link(href='#') Man
+					a.menu__link(href='catalog.html') Man
 					.submenu
 						.submenu__row
 							.submenu__item
@@ -64,7 +87,7 @@ header.header
 								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale")
 								p.submenu__text Super sale!
 				li.menu__item
-					a.menu__link(href='#') Women
+					a.menu__link(href='catalog.html') Women
 					.submenu
 						.submenu__row
 							.submenu__item
@@ -101,7 +124,7 @@ header.header
 								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale")
 								p.submenu__text Super sale!
 				li.menu__item
-					a.menu__link(href='#') Kids
+					a.menu__link(href='catalog.html') Kids
 					.submenu
 						.submenu__row
 							.submenu__item
@@ -138,7 +161,7 @@ header.header
 								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale")
 								p.submenu__text Super sale!				
 				li.menu__item
-					a.menu__link(href='#') Accoseriese
+					a.menu__link(href='catalog.html') Accoseriese
 					.submenu
 						.submenu__row
 							.submenu__item
@@ -175,7 +198,7 @@ header.header
 								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale")
 								p.submenu__text Super sale!
 				li.menu__item
-					a.menu__link(href='#') Featured
+					a.menu__link(href='catalog.html') Featured
 					.submenu
 						.submenu__row
 							.submenu__item
@@ -212,7 +235,7 @@ header.header
 								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale")
 								p.submenu__text Super sale!
 				li.menu__item
-					a.menu__link(href='#') Hot deals
+					a.menu__link(href='catalog.html') Hot deals
 					.submenu
 						.submenu__row
 							.submenu__item

@@ -1,0 +1,23 @@
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		//- base(href="/")>
+		title Catalog - Урок 3. Практическое применение Bootstrap
+		meta(name="description" content="Домашнее задание к уроку 3")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		link(rel="icon" href="images/favicon.png")
+		meta(property="og:image" content="images/dist/preview.jpg")
+		link(rel="stylesheet" href="css/main.min.css")
+	
+	body
+		include blocks/_header
+
+		.content
+			header.content__header.content__header_page
+				.container
+					h2 Каталог товаров
+
+		include blocks/_footer
+
+		script(src="js/app.min.js")

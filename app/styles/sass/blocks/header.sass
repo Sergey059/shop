@@ -9,6 +9,9 @@
 	&__info
 		display: flex
 		align-items: center
+	&__user
+		display: flex
+		align-items: center
 
 .logo
 	margin-right: 37px
@@ -23,47 +26,56 @@
 	border-radius: 3px
 	overflow: hidden
 	&__summary
-		padding-left: 14px
-		padding-right: 24px
+		padding: 0 10px 0 13px
 		line-height: 36px
 		background-color: #f5f5f5
 		border-right: 1px solid #e5e5e5
-		&::after	
-			right: 9px
+		.icon-caret-down
+			margin-left: 8px
+			color: #828282
 	&__dropdown
 		display: none
 	&__btn
-		padding: 12px 10px
 		width: 36px
 		height: 36px
 		display: inline-block
 		border-left: 1px solid #e5e5e5
-		&::before
-			background-image: url(../images/dist/search.svg)
 	&__value
-		padding: 5px 17px
+		padding: 5px 15px
 		width: 280px
 		outline: none
+
+.cart
+	margin-right: 27px
+	padding-top: 10px
+	position: relative
+	font-size: 28px
+	color: #272727
+	&:hover
+		.cart__dropdown
+			display: block
+	&__dropdown
+		display: none
+		position: absolute
+
 .user
 	display: flex
 	justify-content: flex-end
 	align-items: center
 	&__summary
-		padding-left: 18px
-		padding-right: 30px
+		padding: 0 15px 0 16px
 		font-size: 15px
 		line-height: 36px
 		letter-spacing: 0.32px
-		color: white
+		color: #fff
 		background: $accent
 		font-family: $lato-regular
-		&::after	
-			right: 13px
+		.icon-caret-down
+			margin-left: 8px
+			font-size: 14px
 	&__dropdown
 		display: none
-	&__btn
-		margin-right: 20px
-		padding-top: 10px
+
 .navigation
 	margin-bottom: 3px
 .menu

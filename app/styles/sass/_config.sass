@@ -39,6 +39,7 @@ $gutter: $grid-gutter-width
 @include font('lato-bold', normal, 700, '../fonts/Lato-Bold.woff2')
 @include font('lato-black', normal, 800, '../fonts/Lato-Black.woff2')
 @include font('lato-italic', italic, normal, '../fonts/Lato-Italic.woff2')
+@include font('icomoon', normal, 400, '../fonts/icon.woff2')
 
 
 // GENERAL DOCUMENT STYLES
@@ -91,24 +92,10 @@ ul, li
 	list-style-type: none
 details
 	position: relative
-	&[open] summary::after
+	&[open] .icon-caret-down
 		transform: rotate(180deg)
 summary
 	list-style-type: none
-	&::after
-		content: ''
-		display: block
-		width: 9px
-		height: 9px
-		position: absolute
-		top: 50%
-		transform: translateY(-50%)
-		background-image: url(../images/dist/caret-down.svg)
-		background-size: cover
-		background-position: center
-		background-repeat: no-repeat
-		outline: none
-		transition: $transition
 button
 	display: inline-block
 	position: relative
@@ -120,41 +107,6 @@ input
 	outline: none
 	border: none
 	letter-spacing: 0.25px
-.icon
-	position: relative
-	&::before
-		display: flex
-		width: 100%
-		height: 100%
-		content: ''
-		background-position: center
-		background-repeat: no-repeat
-		background-size: cover
-	&-search
-		&::before
-			width: 14px
-			height: 14px
-			opacity: 0.33
-	&-cart
-		&::before
-			width: 32px
-			height: 29px
-			background-image: url(../images/dist/cart.svg)
-	&-truck
-		&::before
-			width: 46px
-			height: 32px
-			background-image: url(../images/dist/truck.svg)
-	&-sale
-		&::before
-			width: 40px
-			height: 40px
-			background-image: url(../images/dist/sale.svg)
-	&-corona
-		&::before
-			width: 48px
-			height: 35px
-			background-image: url(../images/dist/corona.svg)
 .btn
 	font-family: $lato-bold
 	font-weight: 700
@@ -163,4 +115,59 @@ input
 	cursor: pointer
 	transition: $transition
 
+[class^="icon-"], [class*=" icon-"]
+	/* use !important to prevent issues with browser extensions that change fonts
+	font-family: 'icomoon' !important
+	speak: never
+	font-style: normal
+	font-weight: normal
+	font-variant: normal
+	text-transform: none
+	line-height: 1
 
+	/* Better Font Rendering ===========
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.icon-cancel:before
+	content: "\e90a"
+
+.icon-google:before
+	content: "\e907"
+
+.icon-corona:before
+	content: "\e904"
+	color: #f16d7f
+
+.icon-sale:before
+	content: "\e905"
+	color: #f16d7f
+
+.icon-truck:before
+	content: "\e906"
+	color: #f16d7f
+
+.icon-cart:before
+	content: "\e902"
+
+.icon-pinterest-p:before
+	content: "\e90c"
+
+.icon-linkedin:before
+	content: "\e908"
+
+.icon-twitter:before
+	content: "\e909"
+
+.icon-facebook:before, .icon-facebook-f:before
+	content: "\e90b"
+
+.icon-long-arrow-right:before
+	content: "\e903"
+
+.icon-caret-down:before
+	content: "\e901"
+
+.icon-search:before
+	content: "\e900"
+	color: #a3a3a3
