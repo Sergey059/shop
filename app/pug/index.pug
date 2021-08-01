@@ -44,68 +44,87 @@ html(lang="ru-RU")
 						h2.products__title Fetured Items
 						p.products__desc Shop for items based on what we featured in this week
 					.products__body
-						a(href="product.html").products__item.product
-							img.product__img.overlay(src="images/dist/card-1.jpg", alt="product-1")
-							.btn.product__btn.icon.icon-cart Add to Cart
-							.product__info
-								h3.product__title Mango people t-shirt
-								.product__price.pink $52.00
-						a(href="product.html").products__item.product
-							img.product__img.overlay(src="images/dist/card-2.jpg", alt="product-2")
-							.btn.product__btn.icon.icon-cart Add to Cart
-							.product__info
-								h3.product__title Mango people t-shirt
-								.product__price.pink  $52.00
-						a(href="product.html").products__item.product
-							img.product__img.overlay(src="images/dist/card-3.jpg", alt="product-3")
-							.btn.product__btn.icon.icon-cart Add to Cart
-							.product__info
-								h3.product__title Mango people t-shirt
-								.product__price.pink  $52.00
-						a(href="product.html").products__item.product
-							img.product__img.overlay(src="images/dist/card-4.jpg", alt="product-4")
-							.btn.product__btn.icon.icon-cart Add to Cart
-							.product__info
-								h3.product__title Mango people t-shirt
-								.product__price.pink  $52.00
-						a(href="product.html").products__item.product
-							img.product__img.overlay(src="images/dist/card-5.jpg", alt="product-5")
-							.btn.product__btn.icon.icon-cart Add to Cart
-							.product__info
-								h3.product__title Mango people t-shirt
-								.product__price.pink  $52.00
-						a(href="product.html").products__item.product
-							img.product__img.overlay(src="images/dist/card-6.jpg", alt="product-6")
-							.btn.product__btn.icon.icon-cart Add to Cart
-							.product__info
-								h3.product__title Mango people t-shirt
-								.product__price.pink  $52.00
-						a(href="product.html").products__item.product
-							img.product__img.overlay(src="images/dist/card-7.jpg", alt="product-7")
-							.btn.product__btn.icon.icon-cart Add to Cart
-							.product__info
-								h3.product__title Mango people t-shirt
-								.product__price.pink  $52.00
-						a(href="product.html").products__item.product
-							img.product__img.overlay(src="images/dist/card-8.jpg", alt="product-8")
-							.btn.product__btn.icon.icon-cart Add to Cart
-							.product__info
-								h3.product__title Mango people t-shirt
-								.product__price.pink  $52.00
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/card-1.jpg", alt="product-1")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink $52.00
+							button.btn.product__btn Add to Cart
+								i.icon-cart
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/card-2.jpg", alt="product-2")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							button.btn.product__btn Add to Cart
+								ii.icon-cart
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/card-3.jpg", alt="product-3")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							button.btn.product__btn Add to Cart
+								i.icon-cart
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/card-4.jpg", alt="product-4")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							button.btn.product__btn Add to Cart
+								i.icon-cart
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/card-5.jpg", alt="product-5")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							button.btn.product__btn Add to Cart
+								i.icon-cart
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/card-6.jpg", alt="product-6")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							button.btn.product__btn Add to Cart
+								i.icon-cart
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/card-7.jpg", alt="product-7")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							button.btn.product__btn Add to Cart
+								i.icon-cart
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/card-8.jpg", alt="product-8")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							button.btn.product__btn Add to Cart
+								i.icon-cart
 					footer.products__footer
-						button.btn.products__btn Browse All Product
-							img.products__arrow(src='images/dist/arrow-right.svg' alt='arrow')
+						a.btn.products__btn(href="catalog.html")  Browse All Product
+							i.icon-long-arrow-right
 				.banner
 					a.banner__link(href="#")
 						img.banner__img(src="images/dist/sale.jpg", alt="girl in a hat")
 					.conditions
-						.conditions__item.icon.icon-truck
+						.conditions__item
+							i.icon-truck.conditions__icon
 							h3.conditions__title Free Delivery
 							p.conditions__desc Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-						.conditions__item.icon.icon-sale
+						.conditions__item
+							i.icon-sale.conditions__icon
 							h3.conditions__title Sales & discounts
 							p.conditions__desc Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-						.conditions__item.icon.icon-corona
+						.conditions__item
+							i.icon-corona.conditions__icon
 							h3.conditions__title Quality assurance
 							p.conditions__desc Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
 					

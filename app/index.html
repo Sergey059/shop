@@ -33,17 +33,17 @@
                   <li class="cart__item"><img class="cart__img" src="images/dist/cart-1.jpg" alt="man">
                     <div class="cart__item-body">
                       <p class="cart__title">Rebox Zane</p>
-                      <p class="cart__price">$250</p>
-                    </div><i class="icon-cancel"></i>
+                      <p class="cart__price">1 x $250</p>
+                    </div><i class="icon-cancel cart__icon-cancel"></i>
                   </li>
                   <li class="cart__item"><img class="cart__img" src="images/dist/cart-2.jpg" alt="woman">
                     <div class="cart__item-body">
                       <p class="cart__title">Rebox Zane</p>
-                      <p class="cart__price">$250</p>
-                    </div><i class="icon-cancel"></i>
+                      <p class="cart__price">1 x $250</p>
+                    </div><i class="icon-cancel cart__icon-cancel"></i>
                   </li>
                 </ul>
-                <div class="total">
+                <div class="cart__total">
                   <div class="cart__total-text">Total</div>
                   <div class="cart__total-summ">$500</div>
                 </div>
@@ -227,62 +227,79 @@
             <h2 class="products__title">Fetured Items</h2>
             <p class="products__desc">Shop for items based on what we featured in this week</p>
           </header>
-          <div class="products__body"><a class="products__item product" href="product.html"><img class="product__img overlay" src="images/dist/card-1.jpg" alt="product-1">
-              <div class="btn product__btn icon icon-cart">Add to Cart</div>
-              <div class="product__info">
-                <h3 class="product__title">Mango people t-shirt</h3>
-                <div class="product__price pink">$52.00</div>
-              </div></a><a class="products__item product" href="product.html"><img class="product__img overlay" src="images/dist/card-2.jpg" alt="product-2">
-              <div class="btn product__btn icon icon-cart">Add to Cart</div>
-              <div class="product__info">
-                <h3 class="product__title">Mango people t-shirt</h3>
-                <div class="product__price pink"> $52.00</div>
-              </div></a><a class="products__item product" href="product.html"><img class="product__img overlay" src="images/dist/card-3.jpg" alt="product-3">
-              <div class="btn product__btn icon icon-cart">Add to Cart</div>
-              <div class="product__info">
-                <h3 class="product__title">Mango people t-shirt</h3>
-                <div class="product__price pink"> $52.00</div>
-              </div></a><a class="products__item product" href="product.html"><img class="product__img overlay" src="images/dist/card-4.jpg" alt="product-4">
-              <div class="btn product__btn icon icon-cart">Add to Cart</div>
-              <div class="product__info">
-                <h3 class="product__title">Mango people t-shirt</h3>
-                <div class="product__price pink"> $52.00</div>
-              </div></a><a class="products__item product" href="product.html"><img class="product__img overlay" src="images/dist/card-5.jpg" alt="product-5">
-              <div class="btn product__btn icon icon-cart">Add to Cart</div>
-              <div class="product__info">
-                <h3 class="product__title">Mango people t-shirt</h3>
-                <div class="product__price pink"> $52.00</div>
-              </div></a><a class="products__item product" href="product.html"><img class="product__img overlay" src="images/dist/card-6.jpg" alt="product-6">
-              <div class="btn product__btn icon icon-cart">Add to Cart</div>
-              <div class="product__info">
-                <h3 class="product__title">Mango people t-shirt</h3>
-                <div class="product__price pink"> $52.00</div>
-              </div></a><a class="products__item product" href="product.html"><img class="product__img overlay" src="images/dist/card-7.jpg" alt="product-7">
-              <div class="btn product__btn icon icon-cart">Add to Cart</div>
-              <div class="product__info">
-                <h3 class="product__title">Mango people t-shirt</h3>
-                <div class="product__price pink"> $52.00</div>
-              </div></a><a class="products__item product" href="product.html"><img class="product__img overlay" src="images/dist/card-8.jpg" alt="product-8">
-              <div class="btn product__btn icon icon-cart">Add to Cart</div>
-              <div class="product__info">
-                <h3 class="product__title">Mango people t-shirt</h3>
-                <div class="product__price pink"> $52.00</div>
-              </div></a></div>
-          <footer class="products__footer">
-            <button class="btn products__btn">Browse All Product<img class="products__arrow" src="images/dist/arrow-right.svg" alt="arrow"></button>
-          </footer>
+          <div class="products__body">
+            <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/card-1.jpg" alt="product-1">
+                <div class="product__info">
+                  <h3 class="product__title">Mango people t-shirt</h3>
+                  <div class="product__price pink">$52.00</div>
+                </div></a>
+              <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
+            </div>
+            <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/card-2.jpg" alt="product-2">
+                <div class="product__info">
+                  <h3 class="product__title">Mango people t-shirt</h3>
+                  <div class="product__price pink"> $52.00</div>
+                </div></a>
+              <button class="btn product__btn">Add to Cart
+                <ii class="icon-cart"></ii>
+              </button>
+            </div>
+            <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/card-3.jpg" alt="product-3">
+                <div class="product__info">
+                  <h3 class="product__title">Mango people t-shirt</h3>
+                  <div class="product__price pink"> $52.00</div>
+                </div></a>
+              <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
+            </div>
+            <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/card-4.jpg" alt="product-4">
+                <div class="product__info">
+                  <h3 class="product__title">Mango people t-shirt</h3>
+                  <div class="product__price pink"> $52.00</div>
+                </div></a>
+              <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
+            </div>
+            <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/card-5.jpg" alt="product-5">
+                <div class="product__info">
+                  <h3 class="product__title">Mango people t-shirt</h3>
+                  <div class="product__price pink"> $52.00</div>
+                </div></a>
+              <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
+            </div>
+            <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/card-6.jpg" alt="product-6">
+                <div class="product__info">
+                  <h3 class="product__title">Mango people t-shirt</h3>
+                  <div class="product__price pink"> $52.00</div>
+                </div></a>
+              <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
+            </div>
+            <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/card-7.jpg" alt="product-7">
+                <div class="product__info">
+                  <h3 class="product__title">Mango people t-shirt</h3>
+                  <div class="product__price pink"> $52.00</div>
+                </div></a>
+              <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
+            </div>
+            <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/card-8.jpg" alt="product-8">
+                <div class="product__info">
+                  <h3 class="product__title">Mango people t-shirt</h3>
+                  <div class="product__price pink"> $52.00</div>
+                </div></a>
+              <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
+            </div>
+          </div>
+          <footer class="products__footer"><a class="btn products__btn" href="catalog.html"> Browse All Product<i class="icon-long-arrow-right"></i></a></footer>
         </section>
         <div class="banner"><a class="banner__link" href="#"><img class="banner__img" src="images/dist/sale.jpg" alt="girl in a hat"></a>
           <div class="conditions">
-            <div class="conditions__item icon icon-truck">
+            <div class="conditions__item"><i class="icon-truck conditions__icon"></i>
               <h3 class="conditions__title">Free Delivery</h3>
               <p class="conditions__desc">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
             </div>
-            <div class="conditions__item icon icon-sale">
+            <div class="conditions__item"><i class="icon-sale conditions__icon"></i>
               <h3 class="conditions__title">Sales & discounts</h3>
               <p class="conditions__desc">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
             </div>
-            <div class="conditions__item icon icon-corona">
+            <div class="conditions__item"><i class="icon-corona conditions__icon"></i>
               <h3 class="conditions__title">Quality assurance</h3>
               <p class="conditions__desc">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
             </div>
@@ -358,7 +375,7 @@
         <div class="footer__copyright">
           <div class="container">
             <p class="copyright">© 2021  Brand  All Rights Reserved.</p>
-            <div class="social"><a class="social__link" href="#"> <img class="social__img" src="images/dist/facebook-f.svg" alt="facebook"></a><a class="social__link" href="#"> <img class="social__img" src="images/dist/twitter.svg" alt="twitter"></a><a class="social__link" href="#"> <img class="social__img" src="images/dist/linkedin-in.svg" alt="linkedin"></a><a class="social__link" href="#"> <img class="social__img" src="images/dist/pinterest-p.svg" alt="pinterest"></a><a class="social__link" href="#"> <img class="social__img" src="images/dist/google-plus.svg" alt="google-plus"></a></div>
+            <div class="social"><a class="social__link" href="#"> <i class="icon-facebook"></i></a><a class="social__link" href="#"> <i class="icon-twitter"></i></a><a class="social__link" href="#"> <i class="icon-linkedin"></i></a><a class="social__link" href="#"> <i class="icon-pinterest-p"></i></a><a class="social__link" href="#"> <i class="icon-google"></i></a></div>
           </div>
         </div>
       </footer>
