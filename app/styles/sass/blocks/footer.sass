@@ -138,15 +138,22 @@
 			color: #272729
 	&__btn
 		padding: 0 20px
-		line-height: 46px
+		line-height: 44px
 		font-family: $lato-regular
 		font-size: 14px
 		font-weight: 400
 		color: #fff
 		background: $accent
+		border: 1px solid $accent
 		border-radius: 0 23px 23px 0
+		transition: $transition
+		&:hover
+			background: #fff
+			color: $accent
+
 .copyright
 	margin-bottom: 0
+	line-height: 34px
 	font-family: $lato-regular
 	font-size: 16px
 	font-weight: 400
