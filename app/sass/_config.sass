@@ -1,0 +1,42 @@
+// USER VARIABLES SECTION
+
+$accent: #d56c7e // Accent Color
+$fontsize: 14px // Body Font Size
+$textcolor: #888 // Text Color
+$textcolor-heading: #272727 // Text Color
+$lineheight: 1.71 // Document Line Height
+$lato-light: lato-light, sans-serif // User Font Family
+$lato-regular: lato-regular, sans-serif // User Font Family
+$lato-bold: lato-bold, sans-serif // User Font Family
+$lato-black: lato-black, sans-serif // User Font Family
+$lato-italic: lato-italic, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$transition: 0.3s ease
+$border-color: #ebebeb
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+//@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+//@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('lato-regular', normal, 400, '../fonts/Lato-Regular.woff2')
+@include font('lato-light', normal, 200, '../fonts/Lato-Light.woff2')
+@include font('lato-bold', normal, 700, '../fonts/Lato-Bold.woff2')
+@include font('lato-black', normal, 800, '../fonts/Lato-Black.woff2')
+@include font('lato-italic', italic, normal, '../fonts/Lato-Italic.woff2')
+@include font('icomoon', normal, 400, '../fonts/icon.woff2')

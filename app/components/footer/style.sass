@@ -1,0 +1,179 @@
+.div
+	height: 738px
+
+.footer
+	.container
+		display: flex
+	&__top
+		background-image: url(../images/dist/bg-comment.jpg)
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+	&__comments
+		min-height: 438px
+		padding-top: 112px
+		flex-basis: 50%
+		border-right: 1px solid #e2e2e2
+	&__subscribe
+		padding-top: 143px
+		min-height: 438px
+		flex-basis: 50%
+	&__info
+		padding-top: 103px
+		padding-bottom: 60px
+	&__brand
+		margin-right: 66px
+		flex: 0 0 424px
+	&__logo
+		margin-bottom: 18px
+	&__desc
+		line-height: 24px
+		p
+			margin-bottom: 24px
+	&__menu
+		margin-top: 15px
+		flex: 1 0 auto
+		display: flex
+		justify-content: space-between
+		&-item
+			flex-basis: 195px
+			line-height: 26px
+			font-family: $lato-bold
+			font-size: 18px
+			font-weight: 700
+			text-transform: uppercase
+			color: $accent
+	&__submenu
+		margin-top: 22px
+		&-link
+			display: block
+			line-height: 42px
+			font-family: $lato-regular
+			font-size: 16px
+			font-weight: 400
+			text-transform: capitalize
+			color: #888
+			&:hover
+				color: $accent
+	&__copyright
+		padding: 23px 0
+		background: #e5e5e5
+		.container
+			justify-content: space-between
+.slider
+	&__box
+		margin-bottom: 24px
+	&__item
+		display: flex
+	&__img
+		display: block
+		margin-right: 30px
+		width: 82px
+		height: 82px
+		border-radius: 50%
+	&__text
+		margin-top: 5px
+		padding-right: 78px
+	&__desc
+		margin-bottom: 10px
+		line-height: 26px
+		font-family: $lato-italic
+		font-size: 16px
+		font-weight: 400
+		color: #272729
+	&__title
+		margin-bottom: 0
+		font-family: $lato-bold
+		font-size: 16px
+		font-weight: 700
+		color: $accent
+	&__locality
+		line-height: 14px
+		font-size: 12px
+	&__navigation
+		margin-left: 114px
+		display: flex
+		.active
+			background-color: $accent
+	&__btn
+		margin-right: 13px
+		display: block
+		width: 38px
+		height: 4px
+		background: #d5d5d5
+.subscribe
+	text-align: center
+	&__title
+		margin-bottom: 0
+		font-family: $lato-regular
+		font-size: 24px
+		font-weight: 400
+		text-transform: uppercase
+	&__desc
+		margin-bottom: 30px
+		line-height: 24px
+		font-family: $lato-regular
+		font-size: 14px
+		text-transform: uppercase
+	&__form
+		display: flex
+		justify-content: center
+	&__value
+		padding: 0 26px
+		width: 282px
+		line-height: 46px
+		font-family: $lato-regular
+		font-size: 14px
+		font-weight: 400
+		color: #272729
+		border-radius: 23px 0 0 23px
+		background: #e0e0e0
+		&:focus
+			background: #e7e7e7
+		&::placeholder
+			font-family: $lato-regular
+			font-size: 14px
+			font-weight: 400
+			color: #272729
+	&__btn
+		padding: 0 20px
+		line-height: 44px
+		font-family: $lato-regular
+		font-size: 14px
+		font-weight: 400
+		color: #fff
+		background: $accent
+		border: 1px solid $accent
+		border-radius: 0 23px 23px 0
+		transition: $transition
+		&:hover
+			background: #fff
+			color: $accent
+
+.copyright
+	margin-bottom: 0
+	line-height: 34px
+	font-family: $lato-regular
+	font-size: 16px
+	font-weight: 400
+	color: #797979
+
+.social
+	&__link
+		margin-right: 6px
+		display: inline-flex
+		justify-content: center
+		align-items: center
+		width: 34px
+		height: 34px
+		font-size: 14px
+		background: #fff
+		color: #b1b1b1
+		&:last-of-type
+			margin-right: 0
+		&:hover
+			background: $accent
+			color: #fff
+	&__img
+		width: auto
+		height: 13px

@@ -1,0 +1,257 @@
+@use 'sass:math'
+@import config
+@import 'blocks/**/*'
+@import '../components/header/style'
+@import '../components/footer/style'
+@import '../components/breadcrumbs/style'
+
+
+.content
+	&__header
+		background: #f6f3f3
+		.container
+			min-height: 148px
+			display: flex
+			justify-content: space-between
+			align-items: center
+	&__title
+		margin-bottom: 0
+		font-family: $lato-black
+		font-size: 24px
+		font-weight: 800
+		text-transform: uppercase
+		letter-spacing: normal
+		color: $accent
+.page-slider
+	position: relative
+	background: #f7f7f7
+	border-top: 1px solid #e9e9e9
+	border-bottom: 1px solid #e9e9e9
+	z-index: 0
+	&__box
+		margin-bottom: 52px
+	&__item
+		display: flex
+		justify-content: center
+		background: #f7f7f7
+	&__navigation
+		display: flex
+		justify-content: space-between
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+		transform: translateY(-50%)
+		font-size: 30px
+	.page-slider__btn
+		width: 48px
+		line-height: 48px
+		font-size: 22px
+		font-weight: 400
+		color: #fff
+		background: #d9d9d9
+		&_next
+			transform: rotate(90deg)
+		&_prev
+			transform: rotate(-90deg)
+.collection
+	position: relative
+	margin-top: -87px
+	margin-bottom: 115px
+	padding: 65px 0
+	background: #fff
+	border: 1px solid #e9e9e9
+	&__box
+		margin: 0 auto
+		padding-bottom: 20px
+		max-width: 640px
+		text-align: center
+		border-bottom: 1px solid #e9e9e9
+	&__title
+		position: relative
+		margin-bottom: 13px
+		padding-bottom: 8px
+		display: inline-block
+		line-height: 24px
+		font-family: $lato-bold
+		font-size: 14px
+		font-weight: 700
+		text-transform: uppercase
+		letter-spacing: normal
+		color: $accent
+		border-bottom: 1px solid #e9e9e9
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			bottom: -2px
+			left: 50%
+			transform: translateX(-50%)
+			width: 63px
+			height: 3px
+			background: $accent
+	&__accost
+		margin-bottom: 55px
+		line-height: 24px
+		font-family: $lato-black
+		font-size: 18px
+		font-weight: 800
+		text-transform: uppercase
+		letter-spacing: normal
+		color: #4e4e4e
+	&__desc
+		margin-bottom: 16px
+		line-height: 24px
+		font-size: 14px
+		letter-spacing: normal
+		color: #5e5e5e
+	&__parameters
+		margin-bottom: 20px
+		display: flex
+		justify-content: center
+		font-family: $lato-bold
+		font-size: 14px
+		font-weight: 700
+		text-transform: uppercase
+		color: #b8b8b8
+	&__material
+		margin-right: 24px
+		line-height: 24px
+		&_dark
+			color: #333333
+	&__designer
+		margin-left: 24px
+		line-height: 24px
+		&_dark
+			color: #333333
+	&__price
+		margin-right: 20px
+		font-family: $lato-bold
+		font-size: 24px
+		font-weight: 700
+		color: $accent
+	&__choose
+		margin: 0 auto
+		padding: 56px 50px
+		max-width: 640px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__choose-col
+		margin-bottom: 26px
+	&__choose-title
+		margin-bottom: 10px
+		font-family: $lato-bold
+		font-size: 14px
+		font-weight: 700
+		text-transform: uppercase
+		color: #333333
+	&__select,
+	&__input
+		padding-left: 18px
+		display: block
+		width: 144px
+		height: 36px
+		border: 1px solid #e9e9e9
+		outline: none
+		font-family: $lato-regular
+		font-size: 13px
+		font-weight: 400
+		color: #bbbbbb
+	&__btn
+		flex: 1 0 100%
+		display: flex
+		flex-direction: row-reverse
+		justify-content: center
+		align-items: center
+		line-height: 55px
+		font-size: 16px
+		color: $accent
+		border: 1px solid $accent
+		transition: $transition
+		&:hover
+			color: #fff
+			background: $accent
+		.icon-cart
+			margin-right: 14px
+			font-size: 26px
+.products
+	margin-bottom: 30px
+	&__title
+		margin-bottom: 70px
+		line-height: 1
+		font-family: $lato-black
+		font-size: 24px
+		font-weight: 800
+		text-transform: uppercase
+		text-align: center
+	&__body
+		margin-bottom: 16px
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+	&__item
+		margin-bottom: 42px
+		flex-basis: 261px
+		position: relative
+		&:hover
+			box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.16)
+			.product__btn
+				z-index: 1001
+				opacity: 1
+			.product__img
+				filter: brightness(30%)
+.product
+	position: relative
+	display: block
+	color: #6e6e6e
+	transition: $transition
+	&__img
+		min-width: 261px
+		min-height: 280px
+		display: flex
+		width: 100%
+		height: auto
+		transition: $transition
+	&__btn
+		padding: 0 8px
+		line-height: 36px
+		display: inline-flex
+		flex-direction: row-reverse
+		align-items: center
+		flex-wrap: nowrap
+		position: absolute
+		top: 98px
+		left: 50%
+		transform: translateX(-50%)
+		font-size: 13px
+		color: #fff
+		border: 1px solid #fff
+		border-radius: 3px
+		z-index: -100
+		opacity: 0
+		transition: $transition
+		.icon-cart
+			margin-right: 10px
+			font-size: 22px
+			font-weight: 400
+		&:hover
+			color: $accent
+			border-color: $accent
+	&__info
+		padding: 18px 16px
+		padding-bottom: 16px
+	&__title
+		margin-bottom: 10px
+		font-family: $lato-regular
+		font-size: 13px
+		font-weight: 400
+		text-transform: uppercase
+		color: $textcolor-heading
+	&__price
+		letter-spacing: 1px
+		font-family: $lato-bold
+		color: $accent
+
+

@@ -1,0 +1,99 @@
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		//- base(href="/")>
+		title Product - Урок 3. Практическое применение Bootstrap
+		meta(name="description" content="Домашнее задание к уроку 3")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		link(rel="icon" href="images/favicon.png")
+		meta(property="og:image" content="images/dist/preview.jpg")
+		link(rel="stylesheet" href="css/product.min.css")
+	
+	body
+		include ../components/header/index
+
+		.content
+			header.content__header
+				.container
+					h1.content__title New Arrivals
+					include ../components/breadcrumbs/index
+			main
+				.page-slider
+					.page-slider__box
+						.page-slider__item
+							img.page-slider__img(src="images/dist/page-slider-1.jpg", alt="woman")
+					.page-slider__navigation
+						button.btn.page-slider__btn.page-slider__btn_next
+							i.icon-angle-down
+						button.btn.page-slider__btn.page-slider__btn_prev
+							i.icon-angle-down
+				.container
+					section.collection
+						.collection__box
+							h2.collection__title Women collection
+							p.collection__accost Moschino Cheap And Chic
+							p.collection__desc Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.
+							.collection__parameters
+								.collection__material Material: 
+									span.collection__material_dark Cotton
+								.collection__designer Designer: 
+									span.collection__designer_dark Binburhan
+							p.collection__price $561
+						form.collection__choose
+							.collection__choose-col
+								label(for="color").collection__choose-title Choose color
+								select#color.collection__select(name="color")
+									option(value="red" selected) Red
+									option(value="green") Green
+									option(value="blue") Blue
+							.collection__choose-col
+								label(for="size").collection__choose-title Choose size
+								select#size.collection__select(name="size")
+									option(value="L") L
+									option(value="XL") XL
+									option(value="XXL" selected) XXL
+							.collection__choose-col
+								label(for="size").collection__choose-title Quantity
+								input(type="number" placeholder="2" min="1").collection__input
+							button.btn.collection__btn(type="submit") Add to Cart
+								i.icon-cart
+					section.products
+						h2.products__title You may like also
+						.products__body
+							.products__item
+								a(href="product.html").product
+									img.product__img(src="images/dist/like-card-1.jpg", alt="like product-1")
+									.product__info
+										h3.product__title Blaze leggings
+										.product__price $52.00
+								button.btn.product__btn Add to Cart
+									i.icon-cart
+							.products__item
+								a(href="product.html").product
+									img.product__img(src="images/dist/like-card-2.jpg", alt="like product-2")
+									.product__info
+										h3.product__title Alexa sweater
+										.product__price $52.00
+								button.btn.product__btn Add to Cart
+									i.icon-cart
+							.products__item
+								a(href="product.html").product
+									img.product__img(src="images/dist/like-card-3.jpg", alt="like product-3")
+									.product__info
+										h3.product__title Agnes top
+										.product__price $52.00
+								button.btn.product__btn Add to Cart
+									i.icon-cart
+							.products__item
+								a(href="product.html").product
+									img.product__img(src="images/dist/like-card-4.jpg", alt="like product-4")
+									.product__info
+										h3.product__title Sylva sweater
+										.product__price.pink $52.00
+								button.btn.product__btn Add to Cart
+									i.icon-cart
+
+		include ../components/footer/index
+
+		script(src="js/app.min.js")

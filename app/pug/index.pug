@@ -1,0 +1,124 @@
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		//- base(href="/")>
+		title Урок 3. Практическое применение Bootstrap
+		meta(name="description" content="Домашнее задание к уроку 3")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		link(rel="icon" href="images/favicon.png")
+		meta(property="og:image" content="images/dist/preview.jpg")
+		link(rel="stylesheet" href="css/home.min.css")
+	
+	body
+		include ../components/header/index
+
+		.content
+			header.content__header.content__header_home
+				.container
+					h1.content__title_home The brand 
+						span.content__title_small of luxerious 
+							span.pink fashion
+			main.container
+				.offers
+					.offers__col
+						a(href="catalog.html").offers__card.offers__card_big
+							h2.offers__title Hot deal 
+								span.pink.offers__title_big for men
+							img.offers__img(src="images/dist/man.jpg", alt="man")
+						a(href="catalog.html").offers__card
+							h2.offers__title Luxirous & trendy 
+								span.pink.offers__title_big accesories
+							img.offers__img(src="images/dist/wallet.jpg", alt="wallet")
+					.offers__col
+						a(href="catalog.html").offers__card
+							h2.offers__title 30% offer 
+								span.pink.offers__title_big women
+							img.offers__img(src="images/dist/woman.jpg", alt="woman")
+						a(href="catalog.html").offers__card.offers__card_big
+							h2.offers__title New arrivals 
+								span.pink.offers__title_big for kids
+							img.offers__img(src="images/dist/kids.jpg", alt="kids")
+				section.products
+					header.products__header
+						h2.products__title Fetured Items
+						p.products__desc Shop for items based on what we featured in this week
+					.products__body
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/card-1.jpg", alt="product-1")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink $52.00
+							button.btn.product__btn Add to Cart
+								i.icon-cart
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/card-2.jpg", alt="product-2")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							button.btn.product__btn Add to Cart
+								i.icon-cart
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/card-3.jpg", alt="product-3")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							button.btn.product__btn Add to Cart
+								i.icon-cart
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/card-4.jpg", alt="product-4")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							button.btn.product__btn Add to Cart
+								i.icon-cart
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/card-5.jpg", alt="product-5")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							button.btn.product__btn Add to Cart
+								i.icon-cart
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/card-6.jpg", alt="product-6")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							button.btn.product__btn Add to Cart
+								i.icon-cart
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/card-7.jpg", alt="product-7")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							button.btn.product__btn Add to Cart
+								i.icon-cart
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/card-8.jpg", alt="product-8")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							button.btn.product__btn Add to Cart
+								i.icon-cart
+					footer.products__footer
+						a.btn.products__btn(href="catalog.html")  Browse All Product
+							i.icon-long-arrow-right
+				.banner
+					a.banner__link(href="#")
+						img.banner__img(src="images/dist/sale.jpg", alt="girl in a hat")
+					
+					include ../components/conditions/index
+
+		include ../components/footer/index
+			
+		script(src="js/app.min.js")
+
+

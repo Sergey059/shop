@@ -1,0 +1,150 @@
+// GENERAL PROJECT STYLES
+
+::placeholder
+	color: #a2a2a2
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+html
+	min-height: 100vh
+	height: 100%
+body
+	min-width: 320px
+	height: 100%
+	display: flex
+	flex-direction: column
+	position: relative
+	font-family: $lato-light
+	font-size: $fontsize
+	line-height: $lineheight
+	letter-spacing: 0.25px
+	color: $textcolor
+	overflow-x: hidden
+	
+.header,
+.footer
+	flex: 0 0 auto
+.content
+	flex: 1 0 auto
+
+.container
+	margin: 0 auto
+	width: 1140px
+a
+	text-decoration: none
+	transition: $transition
+ul, li
+	margin: 0
+	padding: 0
+	list-style-type: none
+details
+	position: relative
+	&[open]
+		.icon-caret-down
+			display: inline-block
+			transform: rotate(180deg)
+			transition: $transition
+summary
+	list-style-type: none
+button
+	display: inline-block
+	position: relative
+	border: none
+	outline: none
+	background: transparent
+	cursor: pointer
+input
+	outline: none
+	border: none
+	letter-spacing: 0.25px
+.btn
+	padding: 0
+	font-family: $lato-bold
+	font-weight: 700
+	background-color: transparent
+	outline: 0
+	cursor: pointer
+	transition: $transition
+
+[class^="icon-"], [class*=" icon-"]
+	/* use !important to prevent issues with browser extensions that change fonts
+	font-family: 'icomoon' !important
+	speak: never
+	font-style: normal
+	font-weight: normal
+	font-variant: normal
+	text-transform: none
+	line-height: 1
+
+	/* Better Font Rendering ===========
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.icon-repeat:before 
+	content: "\e90d"
+
+.icon-cancel:before
+	content: "\e90a"
+
+.icon-google:before
+	content: "\e907"
+
+.icon-corona:before
+	content: "\e904"
+	color: #d56c7e
+
+.icon-sale:before
+	content: "\e905"
+	color: #d56c7e
+	font-size: 40px
+
+.icon-truck:before
+	content: "\e906"
+	color: #d56c7e
+
+.icon-cart:before
+	content: "\e902"
+
+.icon-angle-down:before
+	content: "\e911"
+
+.icon-star-half:before
+	content: "\e90f"
+
+.icon-star:before
+	content: "\e910"
+
+.icon-heart-o:before
+	content: "\e90e"
+
+.icon-pinterest-p:before
+	content: "\e90c"
+
+.icon-linkedin:before
+	content: "\e908"
+
+.icon-twitter:before
+	content: "\e909"
+
+.icon-facebook:before
+	content: "\e90b"
+
+.icon-long-arrow-right:before
+	content: "\e903"
+
+.icon-caret-down:before
+	content: "\e901"
+
+.icon-search:before
+	content: "\e900"
+	color: #a3a3a3
+

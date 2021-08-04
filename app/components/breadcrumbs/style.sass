@@ -1,0 +1,21 @@
+.breadcrumbs
+	&__link
+		font-size: 14px
+		text-transform: uppercase
+		color: #636363
+		transition: $transition
+		&:hover
+			color: $accent
+			&::after
+				font-family: $lato-light
+				color: #636363
+		&::after
+			margin: 0 1px
+			display: inline
+			content: '/'
+	&__item
+		font-family: $lato-bold
+		font-size: 14px
+		font-weight: 700
+		text-transform: uppercase
+		color: $accent

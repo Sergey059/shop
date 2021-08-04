@@ -1,0 +1,294 @@
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		//- base(href="/")>
+		title Catalog - Урок 3. Практическое применение Bootstrap
+		meta(name="description" content="Домашнее задание к уроку 3")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		link(rel="icon" href="images/favicon.png")
+		meta(property="og:image" content="images/dist/preview.jpg")
+		link(rel="stylesheet" href="css/catalog.min.css")
+	
+	body
+		include ../components/header/index
+
+		.content
+			header.content__header
+				.container
+					h1.content__title New Arrivals
+					include ../components/breadcrumbs/index
+			.container.content__box
+				aside.aside
+					details.aside__details(open)
+						summary.aside__summery Category
+							i.icon-caret-down
+						ul.aside__list
+							li.aside__item
+								a.aside__link(href="catalog.html") Accessories
+							li.aside__item
+								a.aside__link(href="catalog.html") Bags
+							li.aside__item
+								a.aside__link(href="catalog.html") Denim
+							li.aside__item
+								a.aside__link(href="catalog.html") Hoodies & Sweatshirts
+							li.aside__item
+								a.aside__link(href="catalog.html") Jackets & Coats
+							li.aside__item
+								a.aside__link(href="catalog.html") Pants
+							li.aside__item
+								a.aside__link(href="catalog.html") Polos
+							li.aside__item
+								a.aside__link(href="catalog.html") Shirts
+							li.aside__item
+								a.aside__link(href="catalog.html") Shoes
+							li.aside__item
+								a.aside__link(href="catalog.html") Shorts
+							li.aside__item
+								a.aside__link(href="catalog.html") Sweaters & Knits
+							li.aside__item
+								a.aside__link(href="catalog.html") T-Shirts
+							li.aside__item
+								a.aside__link(href="catalog.html") Tanks
+					details.aside__details
+						summary.aside__summery Brand
+							i.icon-caret-down
+						ul.aside__list
+							li.aside__item
+								a.aside__link(href="catalog.html") Adidas
+							li.aside__item
+								a.aside__link(href="catalog.html") Belucci
+							li.aside__item
+								a.aside__link(href="catalog.html") Colins
+							li.aside__item
+								a.aside__link(href="catalog.html") Hugo
+							li.aside__item
+								a.aside__link(href="catalog.html") O'Stin
+					details.aside__details
+						summary.aside__summery Designer
+							i.icon-caret-down
+						ul.aside__list
+							li.aside__item
+								a.aside__link(href="catalog.html") Alessi
+							li.aside__item
+								a.aside__link(href="catalog.html") Balmain
+							li.aside__item
+								a.aside__link(href="catalog.html") Baracco
+							li.aside__item
+								a.aside__link(href="catalog.html") Chaos
+				.products
+					header.products__filter.filter
+						form(action="#", method="post" oninput="result.value=(range.value)").filter__top
+							fieldset.filter__col
+								legend.filter__title Trending now
+								input#bohemian-1.filter__chekbox(type="radio" name="trending")
+								label.filter__item(for="bohemian-1") Bohemian
+								input#floral-1.filter__chekbox(type="radio" name="trending")
+								label.filter__item(for="floral-1") Floral
+								input#lace-1.filter__chekbox(type="radio" name="trending")
+								label.filter__item.filter__item_not(for="lace-1") Lace
+								input#floral-2.filter__chekbox(type="radio" name="trending")
+								label.filter__item(for="floral-2") Floral
+								input#lace-2.filter__chekbox(type="radio" name="trending")
+								label.filter__item(for="lace-2") Lace
+								input#bohemian-2.filter__chekbox(type="radio" name="trending")
+								label.filter__item.filter__item_not(for="bohemian-2") Bohemian
+							fieldset.filter__col
+								legend.filter__title Size
+								input#xxs.filter__chekbox(type="radio" name="size")
+								label.filter__item.filter__item_size(for="xxs") xxs
+								input#xs.filter__chekbox(type="radio" name="size")
+								label.filter__item.filter__item_size(for="xs") xs
+								input#s.filter__chekbox(type="radio" name="size")
+								label.filter__item.filter__item_size(for="s") s
+								input#m.filter__chekbox(type="radio" name="size")
+								label.filter__item.filter__item_size(for="m") m
+								input#l.filter__chekbox(type="radio" name="size")
+								label.filter__item.filter__item_size(for="l") l
+								input#xl.filter__chekbox(type="radio" name="size")
+								label.filter__item.filter__item_size(for="xl") xl
+								input#xxl.filter__chekbox(type="radio" name="size")
+								label.filter__item.filter__item_size(for="xxl") xxl
+							fieldset.filter__col
+								legend.filter__title Price
+								input#range.filter__range(type="range" name="price" value="52" min="0" max="1000" step="1")
+								div $
+									output.filter__output(name="result" for="range") 52
+						.filter__bottom
+							label.filter__title.filter__title_bottom(for="sort")  Sort By
+							select#sort.filter__dropdown(name="sort")
+								option(value="Name") Name
+								option(value="Price") Price
+								option(value="Popular") Popular
+								option(value="New") New
+							label.filter__title.filter__title_bottom(for="show")  Show
+							select#show.filter__dropdown(name="show")
+								option(value="09") 09
+								option(value="18") 18
+								option(value="27") 27
+								option(value="36") 36
+								option(value="All") All
+					main.products__body
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/product-1.jpg", alt="product-1")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink $52.00
+							.product__buttons
+								button.btn.product__btn.product__btn_big Add to Cart
+									i.icon-cart
+								button.btn.product__btn
+									i.icon-repeat
+								button.btn.product__btn
+									i.icon-heart-o
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/product-2.jpg", alt="product-2")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							.product__buttons
+								button.btn.product__btn.product__btn_big Add to Cart
+									i.icon-cart
+								button.btn.product__btn
+									i.icon-repeat
+								button.btn.product__btn
+									i.icon-heart-o
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/product-3.jpg", alt="product-3")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							.product__buttons
+								button.btn.product__btn.product__btn_big Add to Cart
+									i.icon-cart
+								button.btn.product__btn
+									i.icon-repeat
+								button.btn.product__btn
+									i.icon-heart-o
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/product-4.jpg", alt="product-4")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							.product__buttons
+								button.btn.product__btn.product__btn_big Add to Cart
+									i.icon-cart
+								button.btn.product__btn
+									i.icon-repeat
+								button.btn.product__btn
+									i.icon-heart-o
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/product-5.jpg", alt="product-5")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							.product__buttons
+								button.btn.product__btn.product__btn_big Add to Cart
+									i.icon-cart
+								button.btn.product__btn
+									i.icon-repeat
+								button.btn.product__btn
+									i.icon-heart-o
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/product-6.jpg", alt="product-6")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							.product__buttons
+								button.btn.product__btn.product__btn_big Add to Cart
+									i.icon-cart
+								button.btn.product__btn
+									i.icon-repeat
+								button.btn.product__btn
+									i.icon-heart-o
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/product-7.jpg", alt="product-7")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							.product__buttons
+								button.btn.product__btn.product__btn_big Add to Cart
+									i.icon-cart
+								button.btn.product__btn
+									i.icon-repeat
+								button.btn.product__btn
+									i.icon-heart-o
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/product-8.jpg", alt="product-8")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							.product__buttons
+								button.btn.product__btn.product__btn_big Add to Cart
+									i.icon-cart
+								button.btn.product__btn
+									i.icon-repeat
+								button.btn.product__btn
+									i.icon-heart-o
+						.products__item
+							a(href="product.html").product
+								img.product__img(src="images/dist/product-9.jpg", alt="product-9")
+								.product__info
+									h3.product__title Mango people t-shirt
+									.product__price.pink  $52.00
+							.product__buttons
+								button.btn.product__btn.product__btn_big Add to Cart
+									i.icon-cart
+								button.btn.product__btn
+									i.icon-repeat
+								button.btn.product__btn
+									i.icon-heart-o
+					footer.products__footer
+						nav
+							ul.pagination
+								li.pagination__item
+									a.pagination__link.pagination__link_prev(href="#")
+										i.icon-angle-down
+								li.pagination__item.active
+									a.pagination__link(href="#") 1
+								li.pagination__item
+									a.pagination__link(href="#") 2
+								li.pagination__item
+									a.pagination__link(href="#") 3
+								li.pagination__item
+									a.pagination__link(href="#") 4
+								li.pagination__item
+									a.pagination__link(href="#") 5
+								li.pagination__item
+									a.pagination__link(href="#") 6
+								li.pagination__item.pagination__item_dots ......
+								li.pagination__item
+									a.pagination__link(href="#") 20
+								li.pagination__item
+									a.pagination__link.pagination__link_next(href="#")
+										i.icon-angle-down
+						a.btn.products__btn(href="#") View All
+
+			section.conditions
+				.container.conditions__box
+					.conditions__item
+						i.icon-truck.conditions__icon
+						.conditions__text
+							h3.conditions__title Free Delivery
+							p.conditions__desc Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+					.conditions__item
+						i.icon-sale.conditions__icon
+						.conditions__text
+							h3.conditions__title Sales & discounts
+							p.conditions__desc Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+					.conditions__item
+						i.icon-corona.conditions__icon
+						.conditions__text
+							h3.conditions__title Quality assurance
+							p.conditions__desc Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+			include ../components/footer/index
+
+		script(src="js/app.min.js")
