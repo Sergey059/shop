@@ -1,0 +1,51 @@
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		//- base(href="/")>
+		title Catalog - Урок 3. Практическое применение Bootstrap
+		meta(name="description" content="Домашнее задание к уроку 3")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		link(rel="icon" href="images/favicon.png")
+		meta(property="og:image" content="images/dist/preview.jpg")
+		link(rel="stylesheet" href="css/cart.min.css")
+	
+	body
+		include ../components/header/index
+
+		.content
+			header.content__header
+				.container
+					h1.content__title New Arrivals
+					include ../components/breadcrumbs/index
+			.container.content__box
+				table.product
+					thead.product__header
+						tr.product__row
+							th.product__col-title.product__col_details Product Details
+							th.product__col-title.product__col_price Unite Price
+							th.product__col-title.product__col_quantity Quantity
+							th.product__col-title.product__col_shipping Shipping
+							th.product__col-title.product__col_subtotal Subtotal
+							th.product__col-title.product__col_action Action
+					tbody.product__body
+						tr.product__item
+							td.product__col.product__col_details
+								img.product__img(src="images/dist/cart-thumbnail-1.jpg", alt="man")
+								.product__text
+									h3.product__title Mango People T-shirt
+									p.product__feature Color: 
+										span.product__feature_light Red
+									p.product__feature Size: 
+										span.product__feature_light xxl
+							td.product__col.product__col_price $150
+							td.product__col.product__col_quantity
+								input.product__quantity(type="number" min="1" value="2")
+							td.product__col.product__col_shipping Free
+							td.product__col.product__col_subtotal $300
+							td.product__col.product__col_action
+								button.btn.icon-cancel
+
+		include ../components/footer/index
+
+		script(src="js/app.min.js")

@@ -2,12 +2,12 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Product - Урок 3. Практическое применение Bootstrap</title>
+    <title>Catalog - Урок 3. Практическое применение Bootstrap</title>
     <meta name="description" content="Домашнее задание к уроку 3">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" href="images/favicon.png">
     <meta property="og:image" content="images/dist/preview.jpg">
-    <link rel="stylesheet" href="css/product.min.css">
+    <link rel="stylesheet" href="css/cart.min.css">
   </head>
   <body>
     <header class="header">
@@ -235,87 +235,40 @@
           <nav class="breadcrumbs"><a class="breadcrumbs__link" href="catalog.html">Home</a><a class="breadcrumbs__link" href="catalog.html">Men</a><span class="breadcrumbs__item">New Arrivals</span></nav>
         </div>
       </header>
-      <main>
-        <div class="page-slider">
-          <div class="page-slider__box">
-            <div class="page-slider__item"><img class="page-slider__img" src="images/dist/page-slider-1.jpg" alt="woman"></div>
-          </div>
-          <div class="page-slider__navigation">
-            <button class="btn page-slider__btn page-slider__btn_next"><i class="icon-angle-down"></i></button>
-            <button class="btn page-slider__btn page-slider__btn_prev"><i class="icon-angle-down"></i></button>
-          </div>
-        </div>
-        <div class="container">
-          <section class="collection">
-            <div class="collection__box">
-              <h2 class="collection__title">Women collection</h2>
-              <p class="collection__accost">Moschino Cheap And Chic</p>
-              <p class="collection__desc">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
-              <div class="collection__parameters">
-                <div class="collection__material">Material: <span class="collection__material_dark">Cotton</span></div>
-                <div class="collection__designer">Designer: <span class="collection__designer_dark">Binburhan</span></div>
-              </div>
-              <p class="collection__price">$561</p>
-            </div>
-            <form class="collection__choose">
-              <div class="collection__choose-col">
-                <label class="collection__choose-title" for="color">Choose color</label>
-                <select class="collection__select" id="color" name="color">
-                  <option value="red" selected>Red</option>
-                  <option value="green">Green</option>
-                  <option value="blue">Blue</option>
-                </select>
-              </div>
-              <div class="collection__choose-col">
-                <label class="collection__choose-title" for="size">Choose size</label>
-                <select class="collection__select" id="size" name="size">
-                  <option value="L">L</option>
-                  <option value="XL">XL</option>
-                  <option value="XXL" selected>XXL</option>
-                </select>
-              </div>
-              <div class="collection__choose-col">
-                <label class="collection__choose-title" for="size">Quantity</label>
-                <input class="collection__input" type="number" placeholder="2" min="1">
-              </div>
-              <button class="btn collection__btn" type="submit">Add to Cart<i class="icon-cart"></i></button>
-            </form>
-          </section>
-          <section class="products">
-            <h2 class="products__title">You may like also</h2>
-            <div class="products__body">
-              <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/like-card-1.jpg" alt="like product-1">
-                  <div class="product__info">
-                    <h3 class="product__title">Blaze leggings</h3>
-                    <div class="product__price">$52.00</div>
-                  </div></a>
-                <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
-              </div>
-              <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/like-card-2.jpg" alt="like product-2">
-                  <div class="product__info">
-                    <h3 class="product__title">Alexa sweater</h3>
-                    <div class="product__price">$52.00</div>
-                  </div></a>
-                <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
-              </div>
-              <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/like-card-3.jpg" alt="like product-3">
-                  <div class="product__info">
-                    <h3 class="product__title">Agnes top</h3>
-                    <div class="product__price">$52.00</div>
-                  </div></a>
-                <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
-              </div>
-              <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/like-card-4.jpg" alt="like product-4">
-                  <div class="product__info">
-                    <h3 class="product__title">Sylva sweater</h3>
-                    <div class="product__price pink">$52.00</div>
-                  </div></a>
-                <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
-              </div>
-            </div>
-          </section>
-        </div>
-      </main>
+      <div class="container content__box">
+        <table class="product">
+          <thead class="product__header">
+            <tr class="product__row">
+              <th class="product__col-title product__col_details">Product Details</th>
+              <th class="product__col-title product__col_price">Unite Price</th>
+              <th class="product__col-title product__col_quantity">Quantity</th>
+              <th class="product__col-title product__col_shipping">Shipping</th>
+              <th class="product__col-title product__col_subtotal">Subtotal</th>
+              <th class="product__col-title product__col_action">Action</th>
+            </tr>
+          </thead>
+          <tbody class="product__body">
+            <tr class="product__item">
+              <td class="product__col product__col_details"><img class="product__img" src="images/dist/cart-thumbnail-1.jpg" alt="man">
+                <div class="product__text">
+                  <h3 class="product__title">Mango People T-shirt</h3>
+                  <p class="product__feature">Color: <span class="product__feature_light">Red</span></p>
+                  <p class="product__feature">Size: <span class="product__feature_light">xxl</span></p>
+                </div>
+              </td>
+              <td class="product__col product__col_price">$150</td>
+              <td class="product__col product__col_quantity">
+                <input class="product__quantity" type="number" min="1" value="2">
+              </td>
+              <td class="product__col product__col_shipping">Free</td>
+              <td class="product__col product__col_subtotal">$300</td>
+              <td class="product__col product__col_action">
+                <button class="btn icon-cancel"></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     <footer class="footer">
       <section class="footer__top">
