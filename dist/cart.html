@@ -2,12 +2,12 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Урок 4. Препроцессоры: применение на практике</title>
+    <title>Cart - Урок 4. Препроцессоры: применение на практике</title>
     <meta name="description" content="Домашнее задание к уроку 4">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" href="images/favicon.png">
     <meta property="og:image" content="images/dist/preview.jpg">
-    <link rel="stylesheet" href="css/home.min.css">
+    <link rel="stylesheet" href="css/cart.min.css">
   </head>
   <body>
     <header class="header">
@@ -229,108 +229,121 @@
       <!-- End navigation-->
     </header>
     <div class="content">
-      <header class="content__header content__header_home">
+      <header class="content__header">
         <div class="container">
-          <h1 class="content__title_home">The brand <span class="content__title_small">of luxerious <span class="pink">fashion</span></span></h1>
+          <h1 class="content__title">New Arrivals</h1>
+          <nav class="breadcrumbs"><a class="breadcrumbs__link" href="catalog.html">Home</a><a class="breadcrumbs__link" href="catalog.html">Men</a><span class="breadcrumbs__item">New Arrivals</span></nav>
         </div>
       </header>
-      <main class="container">
-        <div class="offers">
-          <div class="offers__col"><a class="offers__card offers__card_big" href="catalog.html">
-              <h2 class="offers__title">Hot deal <span class="pink offers__title_big">for men</span></h2><img class="offers__img" src="images/dist/man.jpg" alt="man"></a><a class="offers__card" href="catalog.html">
-              <h2 class="offers__title">Luxirous & trendy <span class="pink offers__title_big">accesories</span></h2><img class="offers__img" src="images/dist/wallet.jpg" alt="wallet"></a></div>
-          <div class="offers__col"><a class="offers__card" href="catalog.html">
-              <h2 class="offers__title">30% offer <span class="pink offers__title_big">women</span></h2><img class="offers__img" src="images/dist/woman.jpg" alt="woman"></a><a class="offers__card offers__card_big" href="catalog.html">
-              <h2 class="offers__title">New arrivals <span class="pink offers__title_big">for kids</span></h2><img class="offers__img" src="images/dist/kids.jpg" alt="kids"></a></div>
+      <div class="container content__box">
+        <table class="product">
+          <thead class="product__header">
+            <tr class="product__row">
+              <th class="product__col-title product__col_details">Product Details</th>
+              <th class="product__col-title product__col_price">Unite Price</th>
+              <th class="product__col-title product__col_quantity">Quantity</th>
+              <th class="product__col-title product__col_shipping">Shipping</th>
+              <th class="product__col-title product__col_subtotal">Subtotal</th>
+              <th class="product__col-title product__col_action">Action</th>
+            </tr>
+          </thead>
+          <tbody class="product__body">
+            <tr class="product__item">
+              <td class="product__col product__col_details"><img class="product__img" src="images/dist/cart-thumbnail-1.jpg" alt="man">
+                <div class="product__text">
+                  <h3 class="product__title">Mango People T-shirt</h3>
+                  <p class="product__feature">Color: <span class="product__feature_light">Red</span></p>
+                  <p class="product__feature">Size: <span class="product__feature_light">XXL</span></p>
+                </div>
+              </td>
+              <td class="product__col product__col_price">$150</td>
+              <td class="product__col product__col_quantity">
+                <input class="product__quantity" type="number" min="1" value="2">
+              </td>
+              <td class="product__col product__col_shipping">Free</td>
+              <td class="product__col product__col_subtotal">$300</td>
+              <td class="product__col product__col_action">
+                <button class="btn product__btn icon-cancel"></button>
+              </td>
+            </tr>
+            <tr class="product__item">
+              <td class="product__col product__col_details"><img class="product__img" src="images/dist/cart-thumbnail-2.jpg" alt="man">
+                <div class="product__text">
+                  <h3 class="product__title">Mango People T-shirt</h3>
+                  <p class="product__feature">Color: <span class="product__feature_light">Red</span></p>
+                  <p class="product__feature">Size: <span class="product__feature_light">XXL</span></p>
+                </div>
+              </td>
+              <td class="product__col product__col_price">$150</td>
+              <td class="product__col product__col_quantity">
+                <input class="product__quantity" type="number" min="1" value="2">
+              </td>
+              <td class="product__col product__col_shipping">Free</td>
+              <td class="product__col product__col_subtotal">$300</td>
+              <td class="product__col product__col_action">
+                <button class="btn product__btn icon-cancel"></button>
+              </td>
+            </tr>
+            <tr class="product__item">
+              <td class="product__col product__col_details"><img class="product__img" src="images/dist/cart-thumbnail-3.jpg" alt="man">
+                <div class="product__text">
+                  <h3 class="product__title">Mango People T-shirt</h3>
+                  <p class="product__feature">Color: <span class="product__feature_light">Red</span></p>
+                  <p class="product__feature">Size: <span class="product__feature_light">XXL</span></p>
+                </div>
+              </td>
+              <td class="product__col product__col_price">$150</td>
+              <td class="product__col product__col_quantity">
+                <input class="product__quantity" type="number" min="1" value="2">
+              </td>
+              <td class="product__col product__col_shipping">Free</td>
+              <td class="product__col product__col_subtotal">$300</td>
+              <td class="product__col product__col_action">
+                <button class="btn product__btn icon-cancel"></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="btn__box">
+          <button class="btn btn__cart">Clear shopping cart</button>
+          <button class="btn btn__cart">Continue shopping</button>
         </div>
-        <section class="products">
-          <header class="products__header">
-            <h2 class="products__title">Fetured Items</h2>
-            <p class="products__desc">Shop for items based on what we featured in this week</p>
-          </header>
-          <div class="products__body">
-            <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/card-1.jpg" alt="product-1">
-                <div class="product__info">
-                  <h3 class="product__title">Mango people t-shirt</h3>
-                  <div class="product__price pink">$52.00</div>
-                </div></a>
-              <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
+        <form class="form">
+          <fieldset class="form__col">
+            <legend class="form__title">Shipping Adress</legend>
+            <input class="form__value" id="country" type="text" list="dl_country" placeholder="Bangladesh">
+            <datalist class="form__list" id="dl_country">
+              <option value="Afghanistan"></option>
+              <option value="Albania"></option>
+              <option value="Algeria"></option>
+              <option value="Argentina"></option>
+              <option value="Armenia"></option>
+              <option value="Australia"></option>
+              <option value="Bangladesh" selected></option>
+              <option value="Belarus"></option>
+              <option value="Belgium"></option>
+              <option value="Bolivia"></option>
+              <option value="Brazil"></option>
+            </datalist>
+            <input class="form__value" id="state" type="text" placeholder="State">
+            <input class="form__value form__value_mb" id="postcode" type="text" placeholder="Postcode/Zip">
+            <button class="btn form__btn">Get a quote</button>
+          </fieldset>
+          <fieldset class="form__col">
+            <legend class="form__title">Coupon discount</legend>
+            <label class="form__subtitle" for="promocode"> Enter your coupon code if you have one</label>
+            <input class="form__value form__value_mb" id="promocode" type="text" placeholder="Enter Promocode">
+            <button class="btn form__btn">Apply coupon</button>
+          </fieldset>
+          <fieldset class="form__col form__col_last">
+            <div class="form__text">
+              <p class="form__subtotal">Sub total<span class="form__subtotal_value">$900</span></p>
+              <p class="form__total">Grand total <span class="form__total_value">$900</span></p>
             </div>
-            <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/card-2.jpg" alt="product-2">
-                <div class="product__info">
-                  <h3 class="product__title">Mango people t-shirt</h3>
-                  <div class="product__price pink"> $52.00</div>
-                </div></a>
-              <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
-            </div>
-            <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/card-3.jpg" alt="product-3">
-                <div class="product__info">
-                  <h3 class="product__title">Mango people t-shirt</h3>
-                  <div class="product__price pink"> $52.00</div>
-                </div></a>
-              <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
-            </div>
-            <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/card-4.jpg" alt="product-4">
-                <div class="product__info">
-                  <h3 class="product__title">Mango people t-shirt</h3>
-                  <div class="product__price pink"> $52.00</div>
-                </div></a>
-              <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
-            </div>
-            <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/card-5.jpg" alt="product-5">
-                <div class="product__info">
-                  <h3 class="product__title">Mango people t-shirt</h3>
-                  <div class="product__price pink"> $52.00</div>
-                </div></a>
-              <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
-            </div>
-            <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/card-6.jpg" alt="product-6">
-                <div class="product__info">
-                  <h3 class="product__title">Mango people t-shirt</h3>
-                  <div class="product__price pink"> $52.00</div>
-                </div></a>
-              <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
-            </div>
-            <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/card-7.jpg" alt="product-7">
-                <div class="product__info">
-                  <h3 class="product__title">Mango people t-shirt</h3>
-                  <div class="product__price pink"> $52.00</div>
-                </div></a>
-              <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
-            </div>
-            <div class="products__item"><a class="product" href="product.html"><img class="product__img" src="images/dist/card-8.jpg" alt="product-8">
-                <div class="product__info">
-                  <h3 class="product__title">Mango people t-shirt</h3>
-                  <div class="product__price pink"> $52.00</div>
-                </div></a>
-              <button class="btn product__btn">Add to Cart<i class="icon-cart"></i></button>
-            </div>
-          </div>
-          <footer class="products__footer"><a class="btn products__btn" href="catalog.html"> Browse All Product<i class="icon-long-arrow-right"></i></a></footer>
-        </section>
-        <div class="banner"><a class="banner__link" href="#"><img class="banner__img" src="images/dist/sale.jpg" alt="girl in a hat"></a>
-          <section class="conditions">
-            <div class="conditions__item"><i class="icon-truck conditions__icon"></i>
-              <div class="conditions__text">
-                <h3 class="conditions__title">Free Delivery</h3>
-                <p class="conditions__desc">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-              </div>
-            </div>
-            <div class="conditions__item"><i class="icon-sale conditions__icon"></i>
-              <div class="conditions__text">
-                <h3 class="conditions__title">Sales & discounts</h3>
-                <p class="conditions__desc">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-              </div>
-            </div>
-            <div class="conditions__item"><i class="icon-corona conditions__icon"></i>
-              <div class="conditions__text">
-                <h3 class="conditions__title">Quality assurance</h3>
-                <p class="conditions__desc">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-              </div>
-            </div>
-          </section>
-        </div>
-      </main>
+            <button class="btn form__btn form__btn_large" type="submit">Proceed to checkout</button>
+          </fieldset>
+        </form>
+      </div>
     </div>
     <footer class="footer">
       <section class="footer__top">

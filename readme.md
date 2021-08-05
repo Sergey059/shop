@@ -1,15 +1,12 @@
 ## ДЗ к курсу Профессиональная верстка
 
-### Урок 3. Практическое применение Bootstrap
+### Урок 4. Препроцессоры: применение на практике
 
-Шаблон с использованием Bootstrap:
-+ [Сайт](https://sergey059.github.io/Landing-page-bootstrap_5/)
-+ [GitHub Repositories](https://github.com/Sergey059/Landing-page-bootstrap_5)
-
+[GitHub Repositories](https://github.com/Sergey059/shop/tree/lesson-4)
 
 ***
 
-## Настройка и запуск проекта
+### Настройка и запуск проекта
 
 Проверка обновлений - "ncu"
 

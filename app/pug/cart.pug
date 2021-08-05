@@ -1,0 +1,121 @@
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		//- base(href="/")>
+		title Cart - Урок 4. Препроцессоры: применение на практике
+		meta(name="description" content="Домашнее задание к уроку 4")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		link(rel="icon" href="images/favicon.png")
+		meta(property="og:image" content="images/dist/preview.jpg")
+		link(rel="stylesheet" href="css/cart.min.css")
+	
+	body
+		include ../components/header/index
+
+		.content
+			header.content__header
+				.container
+					h1.content__title New Arrivals
+					include ../components/breadcrumbs/index
+			.container.content__box
+				table.product
+					thead.product__header
+						tr.product__row
+							th.product__col-title.product__col_details Product Details
+							th.product__col-title.product__col_price Unite Price
+							th.product__col-title.product__col_quantity Quantity
+							th.product__col-title.product__col_shipping Shipping
+							th.product__col-title.product__col_subtotal Subtotal
+							th.product__col-title.product__col_action Action
+					tbody.product__body
+						tr.product__item
+							td.product__col.product__col_details
+								img.product__img(src="images/dist/cart-thumbnail-1.jpg", alt="man")
+								.product__text
+									h3.product__title Mango People T-shirt
+									p.product__feature Color: 
+										span.product__feature_light Red
+									p.product__feature Size: 
+										span.product__feature_light XXL
+							td.product__col.product__col_price $150
+							td.product__col.product__col_quantity
+								input.product__quantity(type="number" min="1" value="2")
+							td.product__col.product__col_shipping Free
+							td.product__col.product__col_subtotal $300
+							td.product__col.product__col_action
+								button.btn.product__btn.icon-cancel
+						tr.product__item
+							td.product__col.product__col_details
+								img.product__img(src="images/dist/cart-thumbnail-2.jpg", alt="man")
+								.product__text
+									h3.product__title Mango People T-shirt
+									p.product__feature Color: 
+										span.product__feature_light Red
+									p.product__feature Size: 
+										span.product__feature_light XXL
+							td.product__col.product__col_price $150
+							td.product__col.product__col_quantity
+								input.product__quantity(type="number" min="1" value="2")
+							td.product__col.product__col_shipping Free
+							td.product__col.product__col_subtotal $300
+							td.product__col.product__col_action
+								button.btn.product__btn.icon-cancel
+						tr.product__item
+							td.product__col.product__col_details
+								img.product__img(src="images/dist/cart-thumbnail-3.jpg", alt="man")
+								.product__text
+									h3.product__title Mango People T-shirt
+									p.product__feature Color: 
+										span.product__feature_light Red
+									p.product__feature Size: 
+										span.product__feature_light XXL
+							td.product__col.product__col_price $150
+							td.product__col.product__col_quantity
+								input.product__quantity(type="number" min="1" value="2")
+							td.product__col.product__col_shipping Free
+							td.product__col.product__col_subtotal $300
+							td.product__col.product__col_action
+								button.btn.product__btn.icon-cancel
+				.btn__box
+					button.btn.btn__cart Clear shopping cart
+					button.btn.btn__cart Continue shopping
+				form.form
+					fieldset.form__col
+						legend.form__title Shipping Adress
+						input#country.form__value(type="text" list="dl_country" placeholder="Bangladesh")
+						datalist#dl_country.form__list
+							option(value="Afghanistan")
+							option(value="Albania")
+							option(value="Algeria")
+							option(value="Argentina")
+							option(value="Armenia")
+							option(value="Australia")
+							option(value="Bangladesh" selected)
+							option(value="Belarus")
+							option(value="Belgium")
+							option(value="Bolivia")
+							option(value="Brazil")
+						input#state.form__value(type="text" placeholder="State")
+						input#postcode.form__value.form__value_mb(type="text" placeholder="Postcode/Zip")
+						button.btn.form__btn Get a quote
+					fieldset.form__col
+						legend.form__title Coupon discount
+						label.form__subtitle(for="promocode")  Enter your coupon code if you have one
+						input#promocode.form__value.form__value_mb(type="text" placeholder="Enter Promocode")
+						button.btn.form__btn Apply coupon
+					fieldset.form__col.form__col_last
+						.form__text
+							p.form__subtotal Sub total
+								span.form__subtotal_value $900
+							p.form__total Grand total 
+								span.form__total_value $900
+						button.btn.form__btn.form__btn_large(type="submit") Proceed to checkout
+						
+					
+
+
+					
+		include ../components/footer/index
+
+		script(src="js/app.min.js")
