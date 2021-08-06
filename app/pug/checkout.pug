@@ -1,0 +1,80 @@
+doctype html
+html(lang = "en")
+	head
+		meta(charset="utf-8")
+		//- base(href="/")>
+		title Checkout - Урок 5. Эффекты перехода и трансформации в CSS3
+		meta(name="description" content="Домашнее задание к уроку 5")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		link(rel="icon" href="images/favicon.png")
+		meta(property="og:image" content="images/dist/preview.jpg")
+		link(rel="stylesheet" href="css/checkout.min.css")
+	
+	body
+		include ../components/header/index
+
+		.content
+			header.content__header
+				.container
+					h1.content__title New Arrivals
+					include ../components/breadcrumbs/index
+			.container.content__box
+				.accordion
+					.accordion__item.active
+						h2.accordion__title 01. &nbsp;&nbsp; Shipping Adress
+						.accordion__item-body
+							.flex-container
+								.accordion__col.accordion__col_mr
+									h3.accordion__subtitle Check as a guest or register
+									p.accordion__text Register with us for future convenience
+									.accordion__selects
+										input#guest.accordion__radio(type="radio" name="client")
+										label.accordion__radio-title(for="guest") Checkout as guest
+										input#register.accordion__radio(type="radio" name="client" checked)
+										label.accordion__radio-title(for="register") Register
+									p.accordion__text.accordion__text_big Register and save time!
+									p.accordion__text Register with us for future convenience
+									ul.accordion__list
+										li.accordion__list-item Fast and easy checkout
+										li.accordion__list-item Easy access to your order history and status
+									button.btn.accordion__btn Continue
+								form.accordion__col.accordion__form
+									h3.accordion__subtitle Already registed?
+									p.accordion__text.accordion__text_mb Please log in below
+									.accordion__form-item
+										label.accordion__input-title(for="email") Email address 
+											span.accordion__input-title_important *
+										input#email.accordion__input(type="email" name="email")
+									.accordion__form-item
+										label.accordion__input-title(for="password") Password 
+											span.accordion__input-title_important *
+										input#password.accordion__input(type="password" name="password" autocomplete="off")
+									p.accordion__text.accordion__text_important * Required Fileds
+									button.btn.accordion__btn(type="submit") Log In
+									a.accordion__link(href="#") Forgot Password?
+					.accordion__item
+						h2.accordion__title 02. &nbsp;&nbsp; Billing Information
+						.accordion__item-body
+							p.accordion__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis amet aperiam repellendus consequuntur deserunt reiciendis est accusamus ipsa vel, assumenda deleniti. Omnis perspiciatis modi beatae consectetur sapiente molestiae quisquam ab eius alias quidem, deserunt hic totam inventore nulla sint! Deleniti officia minima fugit veritatis cum.
+					.accordion__item
+						h2.accordion__title 03. &nbsp;&nbsp; Shipping Information
+						.accordion__item-body
+							p.accordion__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis amet aperiam repellendus consequuntur deserunt reiciendis est accusamus ipsa vel, assumenda deleniti. Omnis perspiciatis modi beatae consectetur sapiente molestiae quisquam ab eius alias quidem, deserunt hic totam inventore nulla sint! Deleniti officia minima fugit veritatis cum.
+					.accordion__item
+						h2.accordion__title 04. &nbsp;&nbsp; Shipping Method
+						.accordion__item-body
+							p.accordion__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis amet aperiam repellendus consequuntur deserunt reiciendis est accusamus ipsa vel, assumenda deleniti. Omnis perspiciatis modi beatae consectetur sapiente molestiae quisquam ab eius alias quidem, deserunt hic totam inventore nulla sint! Deleniti officia minima fugit veritatis cum.
+					.accordion__item
+						h2.accordion__title 05. &nbsp;&nbsp; Paymet method
+						.accordion__item-body
+							p.accordion__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis amet aperiam repellendus consequuntur deserunt reiciendis est accusamus ipsa vel, assumenda deleniti. Omnis perspiciatis modi beatae consectetur sapiente molestiae quisquam ab eius alias quidem, deserunt hic totam inventore nulla sint! Deleniti officia minima fugit veritatis cum.
+					.accordion__item
+						h2.accordion__title 06. &nbsp;&nbsp; Order review
+						.accordion__item-body
+							p.accordion__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis amet aperiam repellendus consequuntur deserunt reiciendis est accusamus ipsa vel, assumenda deleniti. Omnis perspiciatis modi beatae consectetur sapiente molestiae quisquam ab eius alias quidem, deserunt hic totam inventore nulla sint! Deleniti officia minima fugit veritatis cum.
+
+
+
+		include ../components/footer/index
+
+		script(src="js/app.min.js")

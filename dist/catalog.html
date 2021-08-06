@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Catalog - Урок 4. Препроцессоры: применение на практике</title>
-    <meta name="description" content="Домашнее задание к уроку 4">
+    <title>Catalog - Урок 5. Эффекты перехода и трансформации в CSS3</title>
+    <meta name="description" content="Домашнее задание к уроку 5">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" href="images/favicon.png">
     <meta property="og:image" content="images/dist/preview.jpg">
@@ -67,8 +67,7 @@
                 <div class="cart__total">
                   <div class="cart__total-text">Total</div>
                   <div class="cart__total-summ">$500</div>
-                </div>
-                <button class="btn cart__btn">Checkout</button><a class="btn cart__link" href="cart.html">Go to cart</a>
+                </div><a class="btn cart__link cart__link_first" href="checkout.html"> Checkout</a><a class="btn cart__link" href="cart.html">Go to cart</a>
               </div>
             </div>
             <details class="user">
@@ -497,7 +496,7 @@
                 <h2 class="subscribe__title">Subscribe</h2>
                 <p class="subscribe__desc">For our newletter and promotion</p>
                 <form class="subscribe__form" method="POST" autocomplete="off" novalidate>
-                  <input class="subscribe__value" type="tel" name="email" placeholder="Enter Your Email" id="email">
+                  <input class="subscribe__value" id="subscribe" type="email" name="subscribe" placeholder="Enter Your Email">
                   <button class="btn subscribe__btn" type="submit">Subscribe</button>
                 </form>
               </div>

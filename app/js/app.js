@@ -5,9 +5,11 @@
 
 // // Import vendor jQuery plugin example (not module)
 // require('~/app/libs/mmenu/dist/mmenu.js')
+import Accordion from "./Accordion"
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
-	// Custom JS
-
+	Accordion();
+	
 })

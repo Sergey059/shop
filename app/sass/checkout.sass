@@ -1,0 +1,158 @@
+@use 'sass:math'
+@import config
+@import 'blocks/**/*'
+@import '../components/header/style'
+@import '../components/footer/style'
+@import '../components/breadcrumbs/style'
+	
+.content
+	&__header
+		background: #f6f3f3
+		.container
+			min-height: 148px
+			display: flex
+			justify-content: space-between
+			align-items: center
+	&__title
+		margin-bottom: 0
+		font-family: $lato-black
+		font-size: 24px
+		font-weight: 800
+		text-transform: uppercase
+		letter-spacing: normal
+		color: $accent
+	&__box
+		margin-bottom: 80px
+		padding-top: 60px
+.flex-container
+	display: flex
+.accordion
+	&__item
+		border-bottom: 1px solid #e7e7e7
+		&.active
+			.accordion__item-body
+				padding-top: 10px
+				padding-bottom: 10px
+				height: auto
+				opacity: 1
+				transition: $transition
+	&__title
+		margin-bottom: 0
+		line-height: 70px
+		font-family: $lato-bold
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase
+		letter-spacing: normal
+		color: #272727
+		cursor: pointer
+	&__item-body
+		padding: 0 35px
+		height: 0
+		font-family: $lato-regular
+		font-size: 13px
+		font-weight: 400
+		overflow: hidden
+		opacity: 0
+		transition: $transition
+	&__col
+		flex: 1
+		&_mr
+			margin-right: 30px
+	&__subtitle
+		margin-bottom: 7px
+		font-size: 13px
+		font-weight: 400
+		text-transform: uppercase
+		color: #272727
+	&__text
+		margin-bottom: 25px
+		line-height: 20px
+		color: #b1b1b1
+		&_big
+			margin-top: 24px
+			margin-bottom: 5px
+			text-transform: uppercase
+			color: #272727
+		&_mb
+			margin-bottom: 18px
+		&_important
+			margin-bottom: 30px
+			color: #db1515
+	&__radio
+		position: absolute
+		opacity: 0
+		z-index: -1000
+		&:checked + .accordion__radio-title::before
+			background: #000
+	&__radio-title
+		margin-bottom: 10px
+		display: flex
+		align-items: center
+		font-size: 12px
+		text-transform: uppercase
+		color: #272727
+		cursor: pointer
+		&::before
+			margin-right: 15px
+			padding: 3px
+			width: 13px
+			height: 13px
+			content: ''
+			display: inline-block
+			border: 3px solid #fff
+			border-radius: 50%
+			background: transparent
+			box-shadow: 0 0 0 1px #565656
+			transition: $transition
+	&__list
+		margin-bottom: 35px
+	&__list-item
+		margin-bottom: 5px
+		line-height: 20px
+		color: #b1b1b1
+		&::before
+			content: '»'
+			margin-right: 5px
+			line-height: 1
+			display: inline-block
+			font-size: 18px
+	&__btn
+		margin-bottom: 70px
+		padding: 0 54px
+		line-height: 48px
+		font-size: 14px
+		text-transform: uppercase
+		letter-spacing: normal
+		color: #4b4b4b
+		border: 1px solid #e9e9e9
+		&:hover
+			border-color: $accent
+			color: $accent
+	&__form-item
+		margin-bottom: 18px
+	&__input-title
+		margin-bottom: 10px
+		display: block
+		line-height: 20px
+		font-size: 12px
+		text-transform: uppercase
+		color: #272727
+		&_important
+			color: #db1515
+	&__input
+		padding: 0 10px
+		width: 390px
+		line-height: 42px
+		border: 1px solid #e9e9e9
+		&:focus
+			border: 1px solid #cecece
+	&__link
+		margin-left: 30px
+		display: inline-block
+		line-height: 42px
+		font-size: 14px
+		color: #272727
+		&:hover
+			color: $accent
+	

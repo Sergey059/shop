@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Cart - Урок 5. Эффекты перехода и трансформации в CSS3</title>
+    <title>Checkout - Урок 5. Эффекты перехода и трансформации в CSS3</title>
     <meta name="description" content="Домашнее задание к уроку 5">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" href="images/favicon.png">
     <meta property="og:image" content="images/dist/preview.jpg">
-    <link rel="stylesheet" href="css/cart.min.css">
+    <link rel="stylesheet" href="css/checkout.min.css">
   </head>
   <body>
     <header class="header">
@@ -235,113 +235,76 @@
         </div>
       </header>
       <div class="container content__box">
-        <table class="product">
-          <thead class="product__header">
-            <tr class="product__row">
-              <th class="product__col-title product__col_details">Product Details</th>
-              <th class="product__col-title product__col_price">Unite Price</th>
-              <th class="product__col-title product__col_quantity">Quantity</th>
-              <th class="product__col-title product__col_shipping">Shipping</th>
-              <th class="product__col-title product__col_subtotal">Subtotal</th>
-              <th class="product__col-title product__col_action">Action</th>
-            </tr>
-          </thead>
-          <tbody class="product__body">
-            <tr class="product__item">
-              <td class="product__col product__col_details"><img class="product__img" src="images/dist/cart-thumbnail-1.jpg" alt="man">
-                <div class="product__text">
-                  <h3 class="product__title">Mango People T-shirt</h3>
-                  <p class="product__feature">Color: <span class="product__feature_light">Red</span></p>
-                  <p class="product__feature">Size: <span class="product__feature_light">XXL</span></p>
+        <div class="accordion">
+          <div class="accordion__item active">
+            <h2 class="accordion__title">01. &nbsp;&nbsp; Shipping Adress</h2>
+            <div class="accordion__item-body">
+              <div class="flex-container">
+                <div class="accordion__col accordion__col_mr">
+                  <h3 class="accordion__subtitle">Check as a guest or register</h3>
+                  <p class="accordion__text">Register with us for future convenience</p>
+                  <div class="accordion__selects">
+                    <input class="accordion__radio" id="guest" type="radio" name="client">
+                    <label class="accordion__radio-title" for="guest">Checkout as guest</label>
+                    <input class="accordion__radio" id="register" type="radio" name="client" checked>
+                    <label class="accordion__radio-title" for="register">Register</label>
+                  </div>
+                  <p class="accordion__text accordion__text_big">Register and save time!</p>
+                  <p class="accordion__text">Register with us for future convenience</p>
+                  <ul class="accordion__list">
+                    <li class="accordion__list-item">Fast and easy checkout</li>
+                    <li class="accordion__list-item">Easy access to your order history and status</li>
+                  </ul>
+                  <button class="btn accordion__btn">Continue</button>
                 </div>
-              </td>
-              <td class="product__col product__col_price">$150</td>
-              <td class="product__col product__col_quantity">
-                <input class="product__quantity" type="number" min="1" value="2">
-              </td>
-              <td class="product__col product__col_shipping">Free</td>
-              <td class="product__col product__col_subtotal">$300</td>
-              <td class="product__col product__col_action">
-                <button class="btn product__btn icon-cancel"></button>
-              </td>
-            </tr>
-            <tr class="product__item">
-              <td class="product__col product__col_details"><img class="product__img" src="images/dist/cart-thumbnail-2.jpg" alt="man">
-                <div class="product__text">
-                  <h3 class="product__title">Mango People T-shirt</h3>
-                  <p class="product__feature">Color: <span class="product__feature_light">Red</span></p>
-                  <p class="product__feature">Size: <span class="product__feature_light">XXL</span></p>
-                </div>
-              </td>
-              <td class="product__col product__col_price">$150</td>
-              <td class="product__col product__col_quantity">
-                <input class="product__quantity" type="number" min="1" value="2">
-              </td>
-              <td class="product__col product__col_shipping">Free</td>
-              <td class="product__col product__col_subtotal">$300</td>
-              <td class="product__col product__col_action">
-                <button class="btn product__btn icon-cancel"></button>
-              </td>
-            </tr>
-            <tr class="product__item">
-              <td class="product__col product__col_details"><img class="product__img" src="images/dist/cart-thumbnail-3.jpg" alt="man">
-                <div class="product__text">
-                  <h3 class="product__title">Mango People T-shirt</h3>
-                  <p class="product__feature">Color: <span class="product__feature_light">Red</span></p>
-                  <p class="product__feature">Size: <span class="product__feature_light">XXL</span></p>
-                </div>
-              </td>
-              <td class="product__col product__col_price">$150</td>
-              <td class="product__col product__col_quantity">
-                <input class="product__quantity" type="number" min="1" value="2">
-              </td>
-              <td class="product__col product__col_shipping">Free</td>
-              <td class="product__col product__col_subtotal">$300</td>
-              <td class="product__col product__col_action">
-                <button class="btn product__btn icon-cancel"></button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="btn__box">
-          <button class="btn btn__cart">Clear shopping cart</button>
-          <button class="btn btn__cart">Continue shopping</button>
-        </div>
-        <form class="form">
-          <fieldset class="form__col">
-            <legend class="form__title">Shipping Adress</legend>
-            <input class="form__value" id="country" type="text" list="dl_country" placeholder="Bangladesh">
-            <datalist class="form__list" id="dl_country">
-              <option value="Afghanistan"></option>
-              <option value="Albania"></option>
-              <option value="Algeria"></option>
-              <option value="Argentina"></option>
-              <option value="Armenia"></option>
-              <option value="Australia"></option>
-              <option value="Bangladesh" selected></option>
-              <option value="Belarus"></option>
-              <option value="Belgium"></option>
-              <option value="Bolivia"></option>
-              <option value="Brazil"></option>
-            </datalist>
-            <input class="form__value" id="state" type="text" placeholder="State">
-            <input class="form__value form__value_mb" id="postcode" type="text" placeholder="Postcode/Zip">
-            <button class="btn form__btn">Get a quote</button>
-          </fieldset>
-          <fieldset class="form__col">
-            <legend class="form__title">Coupon discount</legend>
-            <label class="form__subtitle" for="promocode"> Enter your coupon code if you have one</label>
-            <input class="form__value form__value_mb" id="promocode" type="text" placeholder="Enter Promocode">
-            <button class="btn form__btn">Apply coupon</button>
-          </fieldset>
-          <fieldset class="form__col form__col_last">
-            <div class="form__text">
-              <p class="form__subtotal">Sub total<span class="form__subtotal_value">$900</span></p>
-              <p class="form__total">Grand total <span class="form__total_value">$900</span></p>
+                <form class="accordion__col accordion__form">
+                  <h3 class="accordion__subtitle">Already registed?</h3>
+                  <p class="accordion__text accordion__text_mb">Please log in below</p>
+                  <div class="accordion__form-item">
+                    <label class="accordion__input-title" for="email">Email address <span class="accordion__input-title_important">*</span></label>
+                    <input class="accordion__input" id="email" type="email" name="email">
+                  </div>
+                  <div class="accordion__form-item">
+                    <label class="accordion__input-title" for="password">Password <span class="accordion__input-title_important">*</span></label>
+                    <input class="accordion__input" id="password" type="password" name="password" autocomplete="off">
+                  </div>
+                  <p class="accordion__text accordion__text_important">* Required Fileds</p>
+                  <button class="btn accordion__btn" type="submit">Log In</button><a class="accordion__link" href="#">Forgot Password?</a>
+                </form>
+              </div>
             </div>
-            <button class="btn form__btn form__btn_large" type="submit">Proceed to checkout</button>
-          </fieldset>
-        </form>
+          </div>
+          <div class="accordion__item">
+            <h2 class="accordion__title">02. &nbsp;&nbsp; Billing Information</h2>
+            <div class="accordion__item-body">
+              <p class="accordion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis amet aperiam repellendus consequuntur deserunt reiciendis est accusamus ipsa vel, assumenda deleniti. Omnis perspiciatis modi beatae consectetur sapiente molestiae quisquam ab eius alias quidem, deserunt hic totam inventore nulla sint! Deleniti officia minima fugit veritatis cum.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h2 class="accordion__title">03. &nbsp;&nbsp; Shipping Information</h2>
+            <div class="accordion__item-body">
+              <p class="accordion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis amet aperiam repellendus consequuntur deserunt reiciendis est accusamus ipsa vel, assumenda deleniti. Omnis perspiciatis modi beatae consectetur sapiente molestiae quisquam ab eius alias quidem, deserunt hic totam inventore nulla sint! Deleniti officia minima fugit veritatis cum.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h2 class="accordion__title">04. &nbsp;&nbsp; Shipping Method</h2>
+            <div class="accordion__item-body">
+              <p class="accordion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis amet aperiam repellendus consequuntur deserunt reiciendis est accusamus ipsa vel, assumenda deleniti. Omnis perspiciatis modi beatae consectetur sapiente molestiae quisquam ab eius alias quidem, deserunt hic totam inventore nulla sint! Deleniti officia minima fugit veritatis cum.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h2 class="accordion__title">05. &nbsp;&nbsp; Paymet method</h2>
+            <div class="accordion__item-body">
+              <p class="accordion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis amet aperiam repellendus consequuntur deserunt reiciendis est accusamus ipsa vel, assumenda deleniti. Omnis perspiciatis modi beatae consectetur sapiente molestiae quisquam ab eius alias quidem, deserunt hic totam inventore nulla sint! Deleniti officia minima fugit veritatis cum.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h2 class="accordion__title">06. &nbsp;&nbsp; Order review</h2>
+            <div class="accordion__item-body">
+              <p class="accordion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis amet aperiam repellendus consequuntur deserunt reiciendis est accusamus ipsa vel, assumenda deleniti. Omnis perspiciatis modi beatae consectetur sapiente molestiae quisquam ab eius alias quidem, deserunt hic totam inventore nulla sint! Deleniti officia minima fugit veritatis cum.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="footer">
