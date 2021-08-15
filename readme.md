@@ -1,8 +1,8 @@
 ## ДЗ к курсу Профессиональная верстка
 
-### Урок 4. Препроцессоры: применение на практике
+### Урок 5. Эффекты перехода и трансформации в CSS3
 
-[GitHub Repositories](https://github.com/Sergey059/shop/tree/lesson-4)
+[GitHub Repositories](https://github.com/Sergey059/shop/tree/lesson-5)
 
 ***
 

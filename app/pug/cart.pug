@@ -1,10 +1,10 @@
 doctype html
-html(lang="ru-RU")
+html(lang = "en")
 	head
 		meta(charset="utf-8")
 		//- base(href="/")>
-		title Cart - Урок 4. Препроцессоры: применение на практике
-		meta(name="description" content="Домашнее задание к уроку 4")
+		title Cart - Урок 5 и 6. Эффекты перехода и трансформации в CSS3. CSS3: медиа-запросы, адаптивная верстка.
+		meta(name="description" content="Домашнее задание к уроку 5 и 6")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
 		link(rel="icon" href="images/favicon.png")
 		meta(property="og:image" content="images/dist/preview.jpg")
@@ -78,8 +78,8 @@ html(lang="ru-RU")
 							td.product__col.product__col_action
 								button.btn.product__btn.icon-cancel
 				.btn__box
-					button.btn.btn__cart Clear shopping cart
-					button.btn.btn__cart Continue shopping
+					button.btn.btn__cart(type="button") Clear shopping cart
+					button.btn.btn__cart(type="button") Continue shopping
 				form.form
 					fieldset.form__col
 						legend.form__title Shipping Adress
@@ -98,12 +98,12 @@ html(lang="ru-RU")
 							option(value="Brazil")
 						input#state.form__value(type="text" placeholder="State")
 						input#postcode.form__value.form__value_mb(type="text" placeholder="Postcode/Zip")
-						button.btn.form__btn Get a quote
+						button.btn.form__btn(type="button") Get a quote
 					fieldset.form__col
 						legend.form__title Coupon discount
 						label.form__subtitle(for="promocode")  Enter your coupon code if you have one
 						input#promocode.form__value.form__value_mb(type="text" placeholder="Enter Promocode")
-						button.btn.form__btn Apply coupon
+						button.btn.form__btn(type="button") Apply coupon
 					fieldset.form__col.form__col_last
 						.form__text
 							p.form__subtotal Sub total
@@ -112,10 +112,7 @@ html(lang="ru-RU")
 								span.form__total_value $900
 						button.btn.form__btn.form__btn_large(type="submit") Proceed to checkout
 						
-					
 
-
-					
 		include ../components/footer/index
 
 		script(src="js/app.min.js")

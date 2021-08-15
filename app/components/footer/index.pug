@@ -1,6 +1,6 @@
 footer.footer
 	section.footer__top
-		.container
+		.container.footer__container
 			.footer__comments.slider
 				.slider__box
 					figure.slider__item
@@ -18,10 +18,10 @@ footer.footer
 					h2.subscribe__title Subscribe
 					p.subscribe__desc For our newletter and promotion
 					form(method="POST" autocomplete="off" novalidate).subscribe__form
-						input(type="tel" name="email" placeholder="Enter Your Email")#email.subscribe__value
+						input#subscribe.subscribe__value(type="email" name="subscribe" placeholder="Enter Your Email")
 						button.btn.subscribe__btn(type="submit") Subscribe
 	.footer__info
-		.container
+		.container.footer__container
 			.footer__brand
 				a.footer__logo.logo(href='/')
 					img.logo__img(src='images/dist/logo.svg' alt='logotype company')
@@ -32,9 +32,9 @@ footer.footer
 				li.footer__menu-item Company
 					ul.footer__submenu
 						li.footer__submenu-item
-							a.footer__submenu-link(href="#") Home
+							a.footer__submenu-link(href="/") Home
 						li.footer__submenu-item
-							a.footer__submenu-link(href="#") Shop
+							a.footer__submenu-link(href="catalog.html") Shop
 						li.footer__submenu-item
 							a.footer__submenu-link(href="#") About
 						li.footer__submenu-item
@@ -56,27 +56,27 @@ footer.footer
 				li.footer__menu-item Shop category
 					ul.footer__submenu
 						li.footer__submenu-item
-							a.footer__submenu-link(href="#") Men
+							a.footer__submenu-link(href="catalog.html") Men
 						li.footer__submenu-item
-							a.footer__submenu-link(href="#") Women
+							a.footer__submenu-link(href="catalog.html") Women
 						li.footer__submenu-item
-							a.footer__submenu-link(href="#") Child
+							a.footer__submenu-link(href="catalog.html") Child
 						li.footer__submenu-item
-							a.footer__submenu-link(href="#") Apparel
+							a.footer__submenu-link(href="catalog.html") Apparel
 						li.footer__submenu-item
-							a.footer__submenu-link(href="#") Brows All
+							a.footer__submenu-link(href="catalog.html") Brows All
 		
 	.footer__copyright
-		.container
+		.container.footer__container
 			p.copyright © 2021  Brand  All Rights Reserved.
 			.social
-				a.social__link(href="#") 
+				a.social__link(href="https://www.facebook.com/" target="blank") 
 					i.icon-facebook
-				a.social__link(href="#") 
+				a.social__link(href="https://twitter.com/" target="blank") 
 					i.icon-twitter
-				a.social__link(href="#") 
+				a.social__link(href="https://ru.linkedin.com/" target="blank") 
 					i.icon-linkedin
-				a.social__link(href="#") 
+				a.social__link(href="https://www.pinterest.ru/" target="blank") 
 					i.icon-pinterest-p
-				a.social__link(href="#") 
+				a.social__link(href="https://plus.google.com/" target="blank") 
 					i.icon-google

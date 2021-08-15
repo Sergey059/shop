@@ -7,6 +7,7 @@
 @import '../components/conditions/horizontal'
 	
 .content
+	background: #fff
 	&__header
 		background: #f6f3f3
 		.container
@@ -24,9 +25,10 @@
 		color: $accent
 	&__box
 		margin-bottom: 110px
-		padding-top: 60px
 		display: flex
 		justify-content: space-between
+		@media only screen and (min-width : 1024px)
+			padding-top: 60px
 .aside
 	flex: 0 0 261px
 	&__details
