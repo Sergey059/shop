@@ -5,11 +5,15 @@
 
 // // Import vendor jQuery plugin example (not module)
 // require('~/app/libs/mmenu/dist/mmenu.js')
+import Preloader from "./Preloader"
 import Accordion from "./Accordion"
+import Hamburger from "./Hamburger"
 
 
 document.addEventListener('DOMContentLoaded', () => {
 
+	Preloader();
 	Accordion();
-	
+	Hamburger();
+
 })

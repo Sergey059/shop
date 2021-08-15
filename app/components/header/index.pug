@@ -1,102 +1,105 @@
 header.header
 	.header__top
-		.container
-			.header__info
-				a.logo(href='/')
-					img.logo__img(src='images/dist/logo.svg' alt='logotype company')
-				form.header__serch.search(action='search')
-					details.search__details
-						summary.search__summary Browse
-							i.icon-caret-down
-						.search__dropdown
-							h5.search__title Woman
-							ul.search__list
-								li.search__item
-									a.search__link(href="#") Dresses
-								li.search__item
-									a.search__link(href="#") Tops
-								li.search__item
-									a.search__link(href="#") Sweaters/Knits
-								li.search__item
-									a.search__link(href="#") Jackets/Coats
-								li.search__item
-									a.search__link(href="#") Blazers
-								li.search__item
-									a.search__link(href="#") Denim
-								li.search__item
-									a.search__link(href="#") Leggings/Pants
-								li.search__item
-									a.search__link(href="#") Skirts/Shorts
-								li.search__item
-									a.search__link(href="#") Accessories
-							h5.search__title Men
-							ul.search__list
-								li.search__item
-									a.search__link(href="#") Tees/Tank tops
-								li.search__item
-									a.search__link(href="#") Shirts/Polos
-								li.search__item
-									a.search__link(href="#") Sweaters
-								li.search__item
-									a.search__link(href="#") Sweatshirts/Hoodies
-								li.search__item
-									a.search__link(href="#") Blazers
-								li.search__item
-									a.search__link(href="#") Jackets/vests
-					input(type='search' placeholder='Search for Item...' class="search__value")
-					button.btn.search__btn(type='submit')
-						i.icon-search
-			.header__user
-				.cart
-					i.icon-cart
-					.cart__dropdown
-						ul.cart__list
-							li.cart__item
-								img.cart__img(src="images/dist/cart-1.jpg", alt="man")
-								.cart__item-body
-									p.cart__title Rebox Zane
-									.cart__stars
-										i.icon-star
-										i.icon-star
-										i.icon-star
-										i.icon-star
-										i.icon-star-half
-									p.cart__price 1 x $250
-								i.icon-cancel.cart__icon-cancel
-							li.cart__item
-								img.cart__img(src="images/dist/cart-2.jpg", alt="woman")
-								.cart__item-body
-									p.cart__title Rebox Zane
-									.cart__stars
-										i.icon-star
-										i.icon-star
-										i.icon-star
-										i.icon-star
-										i.icon-star-half
-									p.cart__price 1 x $250
-								i.icon-cancel.cart__icon-cancel
-						.cart__total
-							.cart__total-text Total
-							.cart__total-summ $500
-						a.btn.cart__link.cart__link_first(href="checkout.html")  Checkout
-						a.btn.cart__link(href="cart.html") Go to cart
-				details.user
-					summary.user__summary My Account
+		.container.header__container
+			a.logo(href='/')
+				img.logo__img(src='images/dist/logo.svg' alt='logotype company')
+			form.search(action='search')
+				details.search__details
+					summary.search__summary Browse
 						i.icon-caret-down
-					ul.user__dropdown
-						li.user__item
-							a.user__link(href='#') Login / Register
-						li.user__item
-							a.user__link(href='#') Support
+					.search__dropdown
+						h5.search__title Woman
+						ul.search__list
+							li.search__item
+								a.search__link(href="#") Dresses
+							li.search__item
+								a.search__link(href="#") Tops
+							li.search__item
+								a.search__link(href="#") Sweaters/Knits
+							li.search__item
+								a.search__link(href="#") Jackets/Coats
+							li.search__item
+								a.search__link(href="#") Blazers
+							li.search__item
+								a.search__link(href="#") Denim
+							li.search__item
+								a.search__link(href="#") Leggings/Pants
+							li.search__item
+								a.search__link(href="#") Skirts/Shorts
+							li.search__item
+								a.search__link(href="#") Accessories
+						h5.search__title Men
+						ul.search__list
+							li.search__item
+								a.search__link(href="#") Tees/Tank tops
+							li.search__item
+								a.search__link(href="#") Shirts/Polos
+							li.search__item
+								a.search__link(href="#") Sweaters
+							li.search__item
+								a.search__link(href="#") Sweatshirts/Hoodies
+							li.search__item
+								a.search__link(href="#") Blazers
+							li.search__item
+								a.search__link(href="#") Jackets/vests
+				input(type='search' placeholder='Search for Item...' class="search__value")
+				button.btn.search__btn(type='submit')
+					i.icon-search
+			details.cart
+				summary.cart__summary
+					i.icon-cart
+				.cart__dropdown
+					ul.cart__list
+						li.cart__item
+							img.cart__img(src="images/dist/cart-1.jpg", alt="man")
+							.cart__item-body
+								p.cart__title Rebox Zane
+								.cart__stars
+									i.icon-star
+									i.icon-star
+									i.icon-star
+									i.icon-star
+									i.icon-star-half
+								p.cart__price 1 x $250
+							i.icon-cancel.cart__icon-cancel
+						li.cart__item
+							img.cart__img(src="images/dist/cart-2.jpg", alt="woman")
+							.cart__item-body
+								p.cart__title Rebox Zane
+								.cart__stars
+									i.icon-star
+									i.icon-star
+									i.icon-star
+									i.icon-star
+									i.icon-star-half
+								p.cart__price 1 x $250
+							i.icon-cancel.cart__icon-cancel
+					.cart__total
+						.cart__total-text Total
+						.cart__total-summ $500
+					a.btn.cart__link.cart__link_first(href="checkout.html")  Checkout
+					a.btn.cart__link(href="cart.html") Go to cart
+			details.user
+				summary.user__summary
+					span.user__desctop My Account
+					i.icon-user-circle.user__mobile
+					i.icon-caret-down.user__desctop
+				ul.user__dropdown
+					li.user__item
+						a.user__link(href='#') Login / Register
+					li.user__item
+						a.user__link(href='#') Support
+			button.btn.hamburger(type="button")
+				span.hamburger__line
 	nav.navigation
-		.container
+		.container.navigation__container
 			ul.menu
 				li.menu__item.active
 					a.menu__link.menu__link_home(href='/') Home
 				li.menu__item
 					a.menu__link(href='catalog.html') Man
 					.submenu
-						.submenu__row
+						.submenu__col
 							.submenu__item
 								h5.submenu__item-title Man
 								a.submenu__link(href="catalog.html") Dresses
@@ -108,7 +111,7 @@ header.header
 								a.submenu__link(href="catalog.html") Leggings/Pants
 								a.submenu__link(href="catalog.html") Skirts/Shorts
 								a.submenu__link(href="catalog.html") Accessories
-						.submenu__row
+						.submenu__col
 							.submenu__item.submenu__item_mb
 								h5.submenu__item-title Man
 								a.submenu__link(href="catalog.html") Dresses
@@ -120,7 +123,7 @@ header.header
 								a.submenu__link(href="catalog.html") Dresses
 								a.submenu__link(href="catalog.html") Tops
 								a.submenu__link(href="catalog.html") Sweaters/Knits
-						.submenu__row
+						.submenu__col
 							.submenu__item.submenu__item_mb
 								h5.submenu__item-title Man
 								a.submenu__link(href="catalog.html") Dresses
@@ -133,7 +136,7 @@ header.header
 				li.menu__item
 					a.menu__link(href='catalog.html') Women
 					.submenu
-						.submenu__row
+						.submenu__col
 							.submenu__item
 								h5.submenu__item-title Woman
 								a.submenu__link(href="catalog.html") Dresses
@@ -145,7 +148,7 @@ header.header
 								a.submenu__link(href="catalog.html") Leggings/Pants
 								a.submenu__link(href="catalog.html") Skirts/Shorts
 								a.submenu__link(href="catalog.html") Accessories
-						.submenu__row
+						.submenu__col
 							.submenu__item.submenu__item_mb
 								h5.submenu__item-title Woman
 								a.submenu__link(href="catalog.html") Dresses
@@ -157,7 +160,7 @@ header.header
 								a.submenu__link(href="catalog.html") Dresses
 								a.submenu__link(href="catalog.html") Tops
 								a.submenu__link(href="catalog.html") Sweaters/Knits
-						.submenu__row
+						.submenu__col
 							.submenu__item.submenu__item_mb
 								h5.submenu__item-title Woman
 								a.submenu__link(href="catalog.html") Dresses
@@ -170,7 +173,7 @@ header.header
 				li.menu__item
 					a.menu__link(href='catalog.html') Kids
 					.submenu
-						.submenu__row
+						.submenu__col
 							.submenu__item
 								h5.submenu__item-title Kids
 								a.submenu__link(href="catalog.html") Dresses
@@ -182,7 +185,7 @@ header.header
 								a.submenu__link(href="catalog.html") Leggings/Pants
 								a.submenu__link(href="catalog.html") Skirts/Shorts
 								a.submenu__link(href="catalog.html") Accessories
-						.submenu__row
+						.submenu__col
 							.submenu__item.submenu__item_mb
 								h5.submenu__item-title Kids
 								a.submenu__link(href="catalog.html") Dresses
@@ -194,7 +197,7 @@ header.header
 								a.submenu__link(href="catalog.html") Dresses
 								a.submenu__link(href="catalog.html") Tops
 								a.submenu__link(href="catalog.html") Sweaters/Knits
-						.submenu__row
+						.submenu__col
 							.submenu__item.submenu__item_mb
 								h5.submenu__item-title Kids
 								a.submenu__link(href="catalog.html") Dresses
@@ -207,7 +210,7 @@ header.header
 				li.menu__item
 					a.menu__link(href='catalog.html') Accoseriese
 					.submenu
-						.submenu__row
+						.submenu__col
 							.submenu__item
 								h5.submenu__item-title Accoseriese
 								a.submenu__link(href="catalog.html") Dresses
@@ -219,7 +222,7 @@ header.header
 								a.submenu__link(href="catalog.html") Leggings/Pants
 								a.submenu__link(href="catalog.html") Skirts/Shorts
 								a.submenu__link(href="catalog.html") Accessories
-						.submenu__row
+						.submenu__col
 							.submenu__item.submenu__item_mb
 								h5.submenu__item-title Accoseriese
 								a.submenu__link(href="catalog.html") Dresses
@@ -231,7 +234,7 @@ header.header
 								a.submenu__link(href="catalog.html") Dresses
 								a.submenu__link(href="catalog.html") Tops
 								a.submenu__link(href="catalog.html") Sweaters/Knits
-						.submenu__row
+						.submenu__col
 							.submenu__item.submenu__item_mb
 								h5.submenu__item-title Accoseriese
 								a.submenu__link(href="catalog.html") Dresses
@@ -244,7 +247,7 @@ header.header
 				li.menu__item
 					a.menu__link(href='catalog.html') Featured
 					.submenu
-						.submenu__row
+						.submenu__col
 							.submenu__item
 								h5.submenu__item-title Featured
 								a.submenu__link(href="catalog.html") Dresses
@@ -256,7 +259,7 @@ header.header
 								a.submenu__link(href="catalog.html") Leggings/Pants
 								a.submenu__link(href="catalog.html") Skirts/Shorts
 								a.submenu__link(href="catalog.html") Accessories
-						.submenu__row
+						.submenu__col
 							.submenu__item.submenu__item_mb
 								h5.submenu__item-title Featured
 								a.submenu__link(href="catalog.html") Dresses
@@ -268,7 +271,7 @@ header.header
 								a.submenu__link(href="catalog.html") Dresses
 								a.submenu__link(href="catalog.html") Tops
 								a.submenu__link(href="catalog.html") Sweaters/Knits
-						.submenu__row
+						.submenu__col
 							.submenu__item.submenu__item_mb
 								h5.submenu__item-title Featured
 								a.submenu__link(href="catalog.html") Dresses
@@ -281,7 +284,7 @@ header.header
 				li.menu__item
 					a.menu__link(href='catalog.html') Hot deals
 					.submenu
-						.submenu__row
+						.submenu__col
 							.submenu__item
 								h5.submenu__item-title Hot deals
 								a.submenu__link(href="#") Dresses
@@ -293,7 +296,7 @@ header.header
 								a.submenu__link(href="catalog.html") Leggings/Pants
 								a.submenu__link(href="catalog.html") Skirts/Shorts
 								a.submenu__link(href="catalog.html") Accessories
-						.submenu__row
+						.submenu__col
 							.submenu__item.submenu__item_mb
 								h5.submenu__item-title Hot deals
 								a.submenu__link(href="catalog.html") Dresses
@@ -305,7 +308,7 @@ header.header
 								a.submenu__link(href="catalog.html") Dresses
 								a.submenu__link(href="catalog.html") Tops
 								a.submenu__link(href="catalog.html") Sweaters/Knits
-						.submenu__row
+						.submenu__col
 							.submenu__item.submenu__item_mb
 								h5.submenu__item-title Hot deals
 								a.submenu__link(href="catalog.html") Dresses
@@ -315,3 +318,4 @@ header.header
 							a.submenu__sale-box(href="#") 
 								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale")
 								p.submenu__text Super sale!
+
