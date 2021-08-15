@@ -1,8 +1,8 @@
 ## ДЗ к курсу Профессиональная верстка
 
-### Урок 5. Эффекты перехода и трансформации в CSS3
+### Урок 6. CSS3: медиа-запросы, адаптивная верстка.
 
-[GitHub Repositories](https://github.com/Sergey059/shop/tree/lesson-5)
+[GitHub Repositories](https://github.com/Sergey059/shop/tree/lesson-6)
 
 ***
 
