@@ -33,19 +33,27 @@
 	border-top: 1px solid #e9e9e9
 	border-bottom: 1px solid #e9e9e9
 	z-index: 0
+	&__wrap
+		margin: 0 auto
+		overflow: hidden
+		width: 280px
+		@media only screen and (min-width : 576px)
+			width: 320px
+		@media only screen and (min-width : 1024px)
+			width: 554px
 	&__box
-		margin-bottom: 52px
+		margin-bottom: 45px
+		display: flex
+		transition: $transition
+		@media only screen and (min-width : 768px)
+			margin-bottom: 52px
 	&__item
 		display: flex
 		justify-content: center
 		background: #f7f7f7
 	&__img
-		width: auto
-		max-height: 380px
-		@media only screen and (min-width : 576px)
-			max-height: 460px
-		@media only screen and (min-width : 1024px)
-			max-height: 724px
+		width: 100%
+		height: auto
 	&__navigation
 		display: flex
 		justify-content: space-between
