@@ -1,8 +1,8 @@
 ## ДЗ к курсу Профессиональная верстка
 
-### Урок 6. CSS3: медиа-запросы, адаптивная верстка.
+### Урок 7. Практическое применение адаптивной верстки
 
-[GitHub Repositories](https://github.com/Sergey059/shop/tree/lesson-6)
+[GitHub Repositories](https://github.com/Sergey059/shop/tree/lesson-7)
 
 ***
 
