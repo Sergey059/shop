@@ -185,6 +185,7 @@
 		margin-bottom: 15px
 		padding-bottom: 15px
 		display: flex
+		justify-content: space-between
 		align-items: center
 		border-bottom: 1px solid #f1f1f1
 		&-body
@@ -195,6 +196,8 @@
 			align-items: center
 			color: #888
 			transition: $transition
+			&:hover
+				color: $accent
 	&__title
 		margin-bottom: 3px
 		font-family: $lato-bold
@@ -212,9 +215,13 @@
 		font-weight: 400
 		color: $accent
 	&__icon-cancel
+		padding: 10px
 		font-size: 15px
 		color: #bfbfbf
 		cursor: pointer
+		transition: $transition
+		&:hover
+			color: $accent
 	&__total
 		margin-bottom: 30px
 		padding: 5px 0
@@ -498,6 +505,9 @@
 	&__sale-box
 		position: relative
 		display: block
+	&__img
+		width: 100%
+		height: auto
 	&__text
 		margin: 0
 		width: 72px
