@@ -1,18 +1,30 @@
 footer.footer
 	section.footer__top
 		.container.footer__container
-			.footer__comments.slider
-				.slider__box
-					figure.slider__item
-						img.slider__img(src="images/dist/avatar.jpg", alt="photo user")
-						figcaption.slider__text
-							p.slider__desc “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
-							h5.slider__title Bin Burhan
-							p.slider__locality Dhaka, Bd
-				.slider__navigation
-					span.slider__btn
-					span.slider__btn.active
-					span.slider__btn
+			.footer__comments.tabs
+				.tabs__box
+					figure#tab_1.tabs__item
+						img.tabs__img(src="images/dist/avatar.jpg", alt="photo user")
+						figcaption.tabs__text
+							p.tabs__desc “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+							h5.tabs__title Bin Burhan
+							p.tabs__locality Dhaka, Bd
+					figure#tab_2.tabs__item
+						img.tabs__img(src="images/dist/avatar-2.jpg", alt="photo user")
+						figcaption.tabs__text
+							p.tabs__desc “Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+							h5.tabs__title Bin Burhan
+							p.tabs__locality Dhaka, Bd
+					figure#tab_3.tabs__item
+						img.tabs__img(src="images/dist/avatar-3.jpg", alt="photo user")
+						figcaption.tabs__text
+							p.tabs__desc “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a.”
+							h5.tabs__title Bin Burhan
+							p.tabs__locality Dhaka, Bd
+				.tabs__navigation
+					span.tabs__btn(data-tab="#tab_1")
+					span.tabs__btn(data-tab="#tab_2")
+					span.tabs__btn(data-tab="#tab_3")
 			.footer__subscribe.subscribe
 				.subscribe__box
 					h2.subscribe__title Subscribe
@@ -23,7 +35,7 @@ footer.footer
 	.footer__info
 		.container.footer__container
 			.footer__brand
-				a.footer__logo.logo(href='/')
+				a.footer__logo.logo(href='index.html')
 					img.logo__img(src='images/dist/logo.svg' alt='logotype company')
 				.footer__desc
 					p Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
@@ -65,7 +77,6 @@ footer.footer
 							a.footer__submenu-link(href="catalog.html") Apparel
 						li.footer__submenu-item
 							a.footer__submenu-link(href="catalog.html") Brows All
-		
 	.footer__copyright
 		.container.footer__container
 			p.copyright © 2021  Brand  All Rights Reserved.

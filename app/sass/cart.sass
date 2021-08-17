@@ -15,10 +15,12 @@
 		.container
 			text-align: center
 			@media only screen and (min-width : 576px)
-				min-height: 148px
+				min-height: 100px
 				display: flex
 				justify-content: space-between
 				align-items: center
+			@media only screen and (min-width : 1024px)
+				min-height: 148px
 	&__title
 		margin-bottom: 0
 		font-family: $lato-black
@@ -31,17 +33,17 @@
 		margin-bottom: 80px
 		padding-top: 70px
 .table-container
-	margin: 0 auto
+	margin: 0 10px
 	margin-bottom: 30px
-	padding: 0 10px
 	overflow-x: auto
 	position: relative
 	@media only screen and (min-width : 576px)
-		padding: 0 20px
+		margin-left: 20px
+		margin-right: 20px
 		max-width: 100%
 	@media only screen and (min-width : 1024px)
+		margin: 0 auto
 		margin-bottom: 40px
-		padding: 0
 		max-width: 960px
 	@media only screen and (min-width : 1280px)
 		max-width: 1140px
@@ -95,6 +97,8 @@
 		&_action
 			padding-right: 0
 			text-align: right
+			@media only screen and (min-width : 1024px)
+				padding-right: 0
 			@media only screen and (min-width : 1280px)
 				padding-left: 20px
 	&__img
@@ -148,7 +152,7 @@
 		&::-webkit-outer-spin-button
 			-webkit-appearance: none
 	&__btn
-		padding: 20px
+		padding: 10px
 		font-size: 17px
 		color: #bfbfbf
 .btn

@@ -9,6 +9,7 @@ import Preloader from "./Preloader"
 import Accordion from "./Accordion"
 import Hamburger from "./Hamburger"
 import Slider from "./Slider"
+import Tabs from "./Tabs"
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -17,5 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	Accordion();
 	Hamburger();
 	Slider();
+	Tabs();
 
 })
