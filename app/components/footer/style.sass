@@ -170,11 +170,12 @@
 		height: 38px
 		background: transparent
 		border-top: 4px solid #d5d5d5
-		transition: $transition
+		transition: border-color $transition
 		cursor: pointer
 		&:last-of-type
 			margin-right: 0
-		&.active
+		&.active,
+		&:hover
 			border-color: $accent
 .subscribe
 	text-align: center
@@ -224,7 +225,7 @@
 		background: $accent
 		border: 1px solid $accent
 		border-radius: 0 23px 23px 0
-		transition: $transition
+		transition: background $transition, color $transition
 		&:hover
 			background: #fff
 			color: $accent
@@ -249,7 +250,7 @@
 		font-size: 14px
 		background: #fff
 		color: #b1b1b1
-		transition: $transition
+		transition: background $transition, color $transition
 		&:last-of-type
 			margin-right: 0
 		&:hover

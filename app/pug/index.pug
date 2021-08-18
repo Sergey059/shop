@@ -11,17 +11,16 @@ html(lang = "en")
 		link(rel="stylesheet" href="css/home.min.css")
 	
 	body
-		include ../components/preloader/index
 		include ../components/header/index
 
 		.content
 			header.content__header
-				.container.content__container
+				.container.content__container(style="background-image: url(images/dist/home-bg.jpg)")
 					h1.content__title The brand 
 						span.content__title_small of luxerious 
 							span.content__title_pinc fashion
-			main.container
-				.offers
+			.container
+				section.offers
 					.offers__col
 						a(href="catalog.html").offers__card.offers__card_big
 							h2.offers__title Hot deal 

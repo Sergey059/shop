@@ -37,6 +37,7 @@
 	margin-bottom: 30px
 	overflow-x: auto
 	position: relative
+	z-index: 1
 	@media only screen and (min-width : 576px)
 		margin-left: 20px
 		margin-right: 20px
@@ -78,9 +79,11 @@
 				padding: 20px
 		&_details
 			padding-left: 0
-			display: flex
-			text-align: left
+			text-align-last: left
+			@media only screen and (min-width : 1024px)
+				padding-left: 0
 			@media only screen and (min-width : 1280px)
+				padding-left: 0
 				width: 480px
 		&_price
 			@media only screen and (min-width : 1280px)
@@ -101,6 +104,12 @@
 				padding-right: 0
 			@media only screen and (min-width : 1280px)
 				padding-left: 20px
+	&__link
+		display: flex
+		text-align: left
+		&:hover
+			.product__title
+				color: $accent
 	&__img
 		display: block
 		height: 80px
@@ -122,6 +131,7 @@
 		text-overflow: ellipsis
 		color: #272727
 		overflow: hidden
+		transition: color $transition
 		@media only screen and (min-width : 1024px)
 			margin-bottom: 27px
 			max-width: 240px
@@ -156,6 +166,9 @@
 		padding: 10px
 		font-size: 17px
 		color: #bfbfbf
+		transition: color $transition
+		&:hover
+			color: $accent
 .btn
 	&-box
 		margin: 0 auto

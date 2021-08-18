@@ -19,7 +19,7 @@ html(lang = "en")
 					h1.content__title New Arrivals
 					include ../components/breadcrumbs/index
 			.container.content__box
-				.accordion
+				section.accordion
 					.accordion__item.active
 						h2.accordion__title 01. &nbsp;&nbsp; Shipping Adress
 						.accordion__item-body
@@ -37,18 +37,18 @@ html(lang = "en")
 									ul.accordion__list
 										li.accordion__list-item Fast and easy checkout
 										li.accordion__list-item Easy access to your order history and status
-									button.btn.accordion__btn Continue
+									button.btn.accordion__btn(type="button") Continue
 								form.accordion__col.accordion__form
 									h3.accordion__subtitle Already registed?
 									p.accordion__text.accordion__text_mb Please log in below
 									.accordion__form-item
 										label.accordion__input-title(for="email") Email address 
 											span.accordion__input-title_important *
-										input#email.accordion__input(type="email" name="email")
+										input#email.accordion__input(type="email" name="email" required)
 									.accordion__form-item
 										label.accordion__input-title(for="password") Password 
 											span.accordion__input-title_important *
-										input#password.accordion__input(type="password" name="password" autocomplete="off")
+										input#password.accordion__input(type="password" name="password" required autocomplete="off")
 									p.accordion__text.accordion__text_important * Required Fileds
 									button.btn.accordion__btn(type="submit") Log In
 									a.accordion__link(href="#") Forgot Password?
