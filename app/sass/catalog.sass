@@ -16,10 +16,12 @@
 		.container
 			text-align: center
 			@media only screen and (min-width : 576px)
-				min-height: 148px
+				min-height: 100px
 				display: flex
 				justify-content: space-between
 				align-items: center
+			@media only screen and (min-width : 1024px)
+				min-height: 148px
 	&__title
 		margin-bottom: 0
 		font-family: $lato-black
@@ -37,7 +39,7 @@
 			padding-top: 60px
 			display: flex
 			justify-content: space-between
-.aside
+.sidebar
 	display: none
 	@media only screen and (min-width : 1024px)
 		display: block
@@ -45,12 +47,12 @@
 	&__details
 		margin-bottom: 18px
 		&[open]
-			.aside__summery
+			.sidebar__summery
 				color: $accent
 			.icon-caret-down
 				transform: rotate(180deg)
 	.icon-caret-down
-		transition: $transition
+		transition: transform $transition
 	&__summery
 		position: relative
 		padding-left: 15px
@@ -65,7 +67,7 @@
 		text-transform: uppercase
 		color: #6e6e6e
 		border-bottom: 1px solid #eaeaea
-		transition: $transition
+		transition: color $transition
 		cursor: pointer
 		&::before
 			position: absolute
@@ -86,7 +88,7 @@
 		line-height: 33px
 		font-family: $lato-regular
 		color: #6e6e6e
-		transition: $transition
+		transition: color $transition
 		&:hover
 			color: $accent
 .products
@@ -115,7 +117,8 @@
 		@media only screen and (min-width : 1280px)
 			flex-basis: 260px
 		&:hover
-			box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.16)
+			.product
+				box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.16)
 			.product__buttons
 				z-index: 1001
 				opacity: 1
@@ -187,7 +190,7 @@
 		color: #6e6e6e
 		border-right: 2px solid #e7e7e7
 		cursor: pointer
-		transition: $transition
+		transition: color $transition
 		@media only screen and (min-width : 1280px)
 			margin-right: 10px
 			padding-right: 10px
@@ -246,12 +249,12 @@
 	position: relative
 	display: block
 	color: #6e6e6e
-	transition: $transition
+	transition: box-shadow $transition
 	&__img
 		display: flex
 		width: 100%
 		height: auto
-		transition: $transition
+		transition: filter $transition
 	&__buttons
 		width: 120px
 		position: absolute
@@ -263,7 +266,7 @@
 		justify-content: space-between
 		z-index: -100
 		opacity: 0
-		transition: $transition
+		transition: opacity $transition
 	&__btn
 		padding: 8px 15px
 		display: flex
@@ -274,6 +277,7 @@
 		color: #fff
 		border: 1px solid #fff
 		border-radius: 3px
+		transition: color $transition, border-color $transition 
 		&_big
 			margin-bottom: 10px
 			padding: 8px
@@ -296,7 +300,7 @@
 			padding: 18px 16px
 			padding-bottom: 16px
 	&__title
-		margin-bottom: 10px
+		margin-bottom: 5px
 		font-family: $lato-regular
 		font-size: 13px
 		font-weight: 400

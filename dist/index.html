@@ -2,23 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Product - Урок 5 и 6. Эффекты перехода и трансформации в CSS3. CSS3: медиа-запросы, адаптивная верстка.</title>
-    <meta name="description" content="Домашнее задание к уроку 5 и 6">
+    <title>Урок 7. Практическое применение адаптивной верстки</title>
+    <meta name="description" content="Домашнее задание к уроку 7">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" href="images/favicon.png">
     <meta property="og:image" content="images/dist/preview.jpg">
     <link rel="stylesheet" href="css/home.min.css">
   </head>
   <body>
-    <div class="preloader">
-      <div class="preloader__row">
-        <div class="preloader__item"></div>
-        <div class="preloader__item"></div>
-      </div>
-    </div>
     <header class="header">
       <div class="header__top">
-        <div class="container header__container"><a class="logo" href="index.html"><img class="logo__img" src="images/dist/logo.svg" alt="logotype company"></a>
+        <div class="container header__container"><a class="logo" href="index.html"><img class="logo__img" src="images/dist/logo.svg" alt="logotype company" width="164" height="62"></a>
           <form class="search" action="search">
             <details class="search__details">
               <summary class="search__summary">Browse<i class="icon-caret-down"></i></summary>
@@ -53,20 +47,18 @@
             <summary class="cart__summary"><i class="icon-cart"></i></summary>
             <div class="cart__dropdown">
               <ul class="cart__list">
-                <li class="cart__item"><img class="cart__img" src="images/dist/cart-1.jpg" alt="man">
-                  <div class="cart__item-body">
-                    <p class="cart__title">Rebox Zane</p>
-                    <div class="cart__stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-half"></i></div>
-                    <p class="cart__price">1 x $250</p>
-                  </div><i class="icon-cancel cart__icon-cancel"></i>
-                </li>
-                <li class="cart__item"><img class="cart__img" src="images/dist/cart-2.jpg" alt="woman">
-                  <div class="cart__item-body">
-                    <p class="cart__title">Rebox Zane</p>
-                    <div class="cart__stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-half"></i></div>
-                    <p class="cart__price">1 x $250</p>
-                  </div><i class="icon-cancel cart__icon-cancel"></i>
-                </li>
+                <li class="cart__item"><a class="cart__item-link" href="product.html"><img class="cart__img" src="images/dist/cart-1.jpg" alt="man" width="72" height="85">
+                    <div class="cart__item-body">
+                      <p class="cart__title">Rebox Zane</p>
+                      <div class="cart__stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-half"></i></div>
+                      <p class="cart__price">1 x $250</p>
+                    </div></a><i class="icon-cancel cart__icon-cancel"></i></li>
+                <li class="cart__item"><a class="cart__item-link" href="product.html"><img class="cart__img" src="images/dist/cart-2.jpg" alt="woman" width="72" height="85">
+                    <div class="cart__item-body">
+                      <p class="cart__title">Rebox Zane</p>
+                      <div class="cart__stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-half"></i></div>
+                      <p class="cart__price">1 x $250</p>
+                    </div></a><i class="icon-cancel cart__icon-cancel"></i></li>
               </ul>
               <div class="cart__total">
                 <div class="cart__total-text">Total</div>
@@ -87,7 +79,7 @@
       <nav class="navigation">
         <div class="container navigation__container">
           <ul class="menu">
-            <li class="menu__item active"><a class="menu__link menu__link_home" href="/">Home</a></li>
+            <li class="menu__item active"><a class="menu__link menu__link_home" href="index.html">Home</a></li>
             <li class="menu__item"><a class="menu__link" href="catalog.html">Man</a>
               <div class="submenu">
                 <div class="submenu__col">
@@ -106,7 +98,7 @@
                 <div class="submenu__col">
                   <div class="submenu__item submenu__item_mb">
                     <h5 class="submenu__item-title">Man</h5><a class="submenu__link" href="catalog.html">Dresses</a><a class="submenu__link" href="catalog.html">Tops</a><a class="submenu__link" href="catalog.html">Sweaters/Knits</a><a class="submenu__link" href="catalog.html">Jackets/Coats</a>
-                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale">
+                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale" width="255" height="118">
                     <p class="submenu__text">Super sale!</p></a>
                 </div>
               </div>
@@ -129,7 +121,7 @@
                 <div class="submenu__col">
                   <div class="submenu__item submenu__item_mb">
                     <h5 class="submenu__item-title">Woman</h5><a class="submenu__link" href="catalog.html">Dresses</a><a class="submenu__link" href="catalog.html">Tops</a><a class="submenu__link" href="catalog.html">Sweaters/Knits</a><a class="submenu__link" href="catalog.html">Jackets/Coats</a>
-                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale">
+                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale" width="255" height="118">
                     <p class="submenu__text">Super sale!</p></a>
                 </div>
               </div>
@@ -152,7 +144,7 @@
                 <div class="submenu__col">
                   <div class="submenu__item submenu__item_mb">
                     <h5 class="submenu__item-title">Kids</h5><a class="submenu__link" href="catalog.html">Dresses</a><a class="submenu__link" href="catalog.html">Tops</a><a class="submenu__link" href="catalog.html">Sweaters/Knits</a><a class="submenu__link" href="catalog.html">Jackets/Coats</a>
-                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale">
+                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale" width="255" height="118">
                     <p class="submenu__text">Super sale!				</p></a>
                 </div>
               </div>
@@ -175,7 +167,7 @@
                 <div class="submenu__col">
                   <div class="submenu__item submenu__item_mb">
                     <h5 class="submenu__item-title">Accoseriese</h5><a class="submenu__link" href="catalog.html">Dresses</a><a class="submenu__link" href="catalog.html">Tops</a><a class="submenu__link" href="catalog.html">Sweaters/Knits</a><a class="submenu__link" href="catalog.html">Jackets/Coats</a>
-                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale">
+                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale" width="255" height="118">
                     <p class="submenu__text">Super sale!</p></a>
                 </div>
               </div>
@@ -198,7 +190,7 @@
                 <div class="submenu__col">
                   <div class="submenu__item submenu__item_mb">
                     <h5 class="submenu__item-title">Featured</h5><a class="submenu__link" href="catalog.html">Dresses</a><a class="submenu__link" href="catalog.html">Tops</a><a class="submenu__link" href="catalog.html">Sweaters/Knits</a><a class="submenu__link" href="catalog.html">Jackets/Coats</a>
-                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale">
+                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale" width="255" height="118">
                     <p class="submenu__text">Super sale!</p></a>
                 </div>
               </div>
@@ -207,7 +199,7 @@
               <div class="submenu">
                 <div class="submenu__col">
                   <div class="submenu__item">
-                    <h5 class="submenu__item-title">Hot deals</h5><a class="submenu__link" href="#">Dresses</a><a class="submenu__link" href="catalog.html">Tops</a><a class="submenu__link" href="catalog.html">Sweaters/Knits</a><a class="submenu__link" href="catalog.html">Jackets/Coats</a><a class="submenu__link" href="catalog.html">Blazers</a><a class="submenu__link" href="catalog.html">Denim</a><a class="submenu__link" href="catalog.html">Leggings/Pants</a><a class="submenu__link" href="catalog.html">Skirts/Shorts</a><a class="submenu__link" href="catalog.html">Accessories</a>
+                    <h5 class="submenu__item-title">Hot deals</h5><a class="submenu__link" href="catalog.html">Dresses</a><a class="submenu__link" href="catalog.html">Tops</a><a class="submenu__link" href="catalog.html">Sweaters/Knits</a><a class="submenu__link" href="catalog.html">Jackets/Coats</a><a class="submenu__link" href="catalog.html">Blazers</a><a class="submenu__link" href="catalog.html">Denim</a><a class="submenu__link" href="catalog.html">Leggings/Pants</a><a class="submenu__link" href="catalog.html">Skirts/Shorts</a><a class="submenu__link" href="catalog.html">Accessories</a>
                   </div>
                 </div>
                 <div class="submenu__col">
@@ -221,7 +213,7 @@
                 <div class="submenu__col">
                   <div class="submenu__item submenu__item_mb">
                     <h5 class="submenu__item-title">Hot deals</h5><a class="submenu__link" href="catalog.html">Dresses</a><a class="submenu__link" href="catalog.html">Tops</a><a class="submenu__link" href="catalog.html">Sweaters/Knits</a><a class="submenu__link" href="catalog.html">Jackets/Coats</a>
-                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale">
+                  </div><a class="submenu__sale-box" href="#"> <img class="submenu__img" src="images/dist/menu-sale.jpg" alt="sale" width="255" height="118">
                     <p class="submenu__text">Super sale!</p></a>
                 </div>
               </div>
@@ -232,19 +224,19 @@
     </header>
     <div class="content">
       <header class="content__header">
-        <div class="container content__container">
+        <div class="container content__container" style="background-image: url(images/dist/home-bg.jpg)">
           <h1 class="content__title">The brand <span class="content__title_small">of luxerious <span class="content__title_pinc">fashion</span></span></h1>
         </div>
       </header>
-      <main class="container">
-        <div class="offers">
+      <div class="container">
+        <section class="offers">
           <div class="offers__col"><a class="offers__card offers__card_big" href="catalog.html">
               <h2 class="offers__title">Hot deal <span class="offers__title_big">for men</span></h2><img class="offers__img" src="images/dist/man.jpg" alt="man" width="560" height="261"></a><a class="offers__card" href="catalog.html">
               <h2 class="offers__title">Luxirous & trendy <span class="offers__title_big">accesories</span></h2><img class="offers__img" src="images/dist/wallet.jpg" alt="wallet" width="560" height="261"></a></div>
           <div class="offers__col offers__col_rewers"><a class="offers__card" href="catalog.html">
               <h2 class="offers__title">30% offer <span class="offers__title_big">women</span></h2><img class="offers__img" src="images/dist/woman.jpg" alt="woman" width="560" height="261"></a><a class="offers__card offers__card_big" href="catalog.html">
               <h2 class="offers__title">New arrivals <span class="offers__title_big">for kids</span></h2><img class="offers__img" src="images/dist/kids.jpg" alt="kids" width="560" height="261"></a></div>
-        </div>
+        </section>
         <section class="products">
           <header class="products__header">
             <h2 class="products__title">Fetured Items</h2>
@@ -311,7 +303,7 @@
           <footer class="products__footer"><a class="btn products__btn" href="catalog.html"> Browse All Product<i class="icon-long-arrow-right"></i></a></footer>
         </section>
         <div class="banner"><a class="banner__link" href="#"><img class="banner__img" src="images/dist/sale.jpg" alt="girl in a hat"></a>
-          <section class="conditions">
+          <div class="conditions">
             <div class="conditions__item"><i class="icon-truck conditions__icon"></i>
               <div class="conditions__text">
                 <h3 class="conditions__title">Free Delivery</h3>
@@ -330,24 +322,38 @@
                 <p class="conditions__desc">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
               </div>
             </div>
-          </section>
+          </div>
         </div>
-      </main>
+      </div>
     </div>
     <footer class="footer">
       <section class="footer__top">
         <div class="container footer__container">
-          <div class="footer__comments slider">
-            <div class="slider__box">
-              <figure class="slider__item"><img class="slider__img" src="images/dist/avatar.jpg" alt="photo user">
-                <figcaption class="slider__text">
-                  <p class="slider__desc">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
-                  <h5 class="slider__title">Bin Burhan</h5>
-                  <p class="slider__locality">Dhaka, Bd</p>
+          <div class="footer__comments tabs">
+            <div class="tabs__box">
+              <figure class="tabs__item" id="tab_1"><img class="tabs__img" src="images/dist/avatar.jpg" alt="photo user" width="82" height="82">
+                <figcaption class="tabs__text">
+                  <p class="tabs__desc">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                  <h5 class="tabs__title">Bin Burhan</h5>
+                  <p class="tabs__locality">Dhaka, Bd</p>
+                </figcaption>
+              </figure>
+              <figure class="tabs__item" id="tab_2"><img class="tabs__img" src="images/dist/avatar-2.jpg" alt="photo user" width="82" height="82">
+                <figcaption class="tabs__text">
+                  <p class="tabs__desc">“Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                  <h5 class="tabs__title">Bin Burhan</h5>
+                  <p class="tabs__locality">Dhaka, Bd</p>
+                </figcaption>
+              </figure>
+              <figure class="tabs__item" id="tab_3"><img class="tabs__img" src="images/dist/avatar-3.jpg" alt="photo user" width="82" height="82">
+                <figcaption class="tabs__text">
+                  <p class="tabs__desc">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a.”</p>
+                  <h5 class="tabs__title">Bin Burhan</h5>
+                  <p class="tabs__locality">Dhaka, Bd</p>
                 </figcaption>
               </figure>
             </div>
-            <div class="slider__navigation"><span class="slider__btn"></span><span class="slider__btn active"></span><span class="slider__btn"></span></div>
+            <div class="tabs__navigation"><span class="tabs__btn" data-tab="#tab_1"></span><span class="tabs__btn" data-tab="#tab_2"></span><span class="tabs__btn" data-tab="#tab_3"></span></div>
           </div>
           <div class="footer__subscribe subscribe">
             <div class="subscribe__box">
@@ -363,7 +369,7 @@
       </section>
       <div class="footer__info">
         <div class="container footer__container">
-          <div class="footer__brand"><a class="footer__logo logo" href="/"><img class="logo__img" src="images/dist/logo.svg" alt="logotype company"></a>
+          <div class="footer__brand"><a class="footer__logo logo" href="index.html"><img class="logo__img" src="images/dist/logo.svg" alt="logotype company" width="164" height="62"></a>
             <div class="footer__desc">
               <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
               <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>

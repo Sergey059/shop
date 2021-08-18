@@ -1,9 +1,9 @@
 header.header
 	.header__top
 		.container.header__container
-			a.logo(href='index.html')
-				img.logo__img(src='images/dist/logo.svg' alt='logotype company')
-			form.search(action='search')
+			a.logo(href="index.html")
+				img.logo__img(src="images/dist/logo.svg" alt="logotype company" width="164" height="62")
+			form.search(action="search")
 				details.search__details
 					summary.search__summary Browse
 						i.icon-caret-down
@@ -42,8 +42,8 @@ header.header
 								a.search__link(href="#") Blazers
 							li.search__item
 								a.search__link(href="#") Jackets/vests
-				input(type='search' placeholder='Search for Item...' class="search__value")
-				button.btn.search__btn(type='submit')
+				input(type="search" placeholder="Search for Item..." class="search__value")
+				button.btn.search__btn(type="submit")
 					i.icon-search
 			details.cart
 				summary.cart__summary
@@ -51,28 +51,30 @@ header.header
 				.cart__dropdown
 					ul.cart__list
 						li.cart__item
-							img.cart__img(src="images/dist/cart-1.jpg", alt="man")
-							.cart__item-body
-								p.cart__title Rebox Zane
-								.cart__stars
-									i.icon-star
-									i.icon-star
-									i.icon-star
-									i.icon-star
-									i.icon-star-half
-								p.cart__price 1 x $250
+							a.cart__item-link(href="product.html")
+								img.cart__img(src="images/dist/cart-1.jpg", alt="man" width="72" height="85")
+								.cart__item-body
+									p.cart__title Rebox Zane
+									.cart__stars
+										i.icon-star
+										i.icon-star
+										i.icon-star
+										i.icon-star
+										i.icon-star-half
+									p.cart__price 1 x $250
 							i.icon-cancel.cart__icon-cancel
 						li.cart__item
-							img.cart__img(src="images/dist/cart-2.jpg", alt="woman")
-							.cart__item-body
-								p.cart__title Rebox Zane
-								.cart__stars
-									i.icon-star
-									i.icon-star
-									i.icon-star
-									i.icon-star
-									i.icon-star-half
-								p.cart__price 1 x $250
+							a.cart__item-link(href="product.html")
+								img.cart__img(src="images/dist/cart-2.jpg", alt="woman" width="72" height="85")
+								.cart__item-body
+									p.cart__title Rebox Zane
+									.cart__stars
+										i.icon-star
+										i.icon-star
+										i.icon-star
+										i.icon-star
+										i.icon-star-half
+									p.cart__price 1 x $250
 							i.icon-cancel.cart__icon-cancel
 					.cart__total
 						.cart__total-text Total
@@ -95,7 +97,7 @@ header.header
 		.container.navigation__container
 			ul.menu
 				li.menu__item.active
-					a.menu__link.menu__link_home(href='/') Home
+					a.menu__link.menu__link_home(href='index.html') Home
 				li.menu__item
 					a.menu__link(href='catalog.html') Man
 					.submenu
@@ -131,10 +133,10 @@ header.header
 								a.submenu__link(href="catalog.html") Sweaters/Knits
 								a.submenu__link(href="catalog.html") Jackets/Coats
 							a.submenu__sale-box(href="#") 
-								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale")
+								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale" width="255" height="118")
 								p.submenu__text Super sale!
 				li.menu__item
-					a.menu__link(href='catalog.html') Women
+					a.menu__link(href="catalog.html") Women
 					.submenu
 						.submenu__col
 							.submenu__item
@@ -168,10 +170,10 @@ header.header
 								a.submenu__link(href="catalog.html") Sweaters/Knits
 								a.submenu__link(href="catalog.html") Jackets/Coats
 							a.submenu__sale-box(href="#") 
-								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale")
+								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale" width="255" height="118")
 								p.submenu__text Super sale!
 				li.menu__item
-					a.menu__link(href='catalog.html') Kids
+					a.menu__link(href="catalog.html") Kids
 					.submenu
 						.submenu__col
 							.submenu__item
@@ -205,10 +207,10 @@ header.header
 								a.submenu__link(href="catalog.html") Sweaters/Knits
 								a.submenu__link(href="catalog.html") Jackets/Coats
 							a.submenu__sale-box(href="#") 
-								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale")
+								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale" width="255" height="118")
 								p.submenu__text Super sale!				
 				li.menu__item
-					a.menu__link(href='catalog.html') Accoseriese
+					a.menu__link(href="catalog.html") Accoseriese
 					.submenu
 						.submenu__col
 							.submenu__item
@@ -242,10 +244,10 @@ header.header
 								a.submenu__link(href="catalog.html") Sweaters/Knits
 								a.submenu__link(href="catalog.html") Jackets/Coats
 							a.submenu__sale-box(href="#") 
-								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale")
+								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale" width="255" height="118")
 								p.submenu__text Super sale!
 				li.menu__item
-					a.menu__link(href='catalog.html') Featured
+					a.menu__link(href="catalog.html") Featured
 					.submenu
 						.submenu__col
 							.submenu__item
@@ -279,15 +281,15 @@ header.header
 								a.submenu__link(href="catalog.html") Sweaters/Knits
 								a.submenu__link(href="catalog.html") Jackets/Coats
 							a.submenu__sale-box(href="#") 
-								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale")
+								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale" width="255" height="118")
 								p.submenu__text Super sale!
 				li.menu__item
-					a.menu__link(href='catalog.html') Hot deals
+					a.menu__link(href="catalog.html") Hot deals
 					.submenu
 						.submenu__col
 							.submenu__item
 								h5.submenu__item-title Hot deals
-								a.submenu__link(href="#") Dresses
+								a.submenu__link(href="catalog.html") Dresses
 								a.submenu__link(href="catalog.html") Tops
 								a.submenu__link(href="catalog.html") Sweaters/Knits
 								a.submenu__link(href="catalog.html") Jackets/Coats
@@ -316,6 +318,6 @@ header.header
 								a.submenu__link(href="catalog.html") Sweaters/Knits
 								a.submenu__link(href="catalog.html") Jackets/Coats
 							a.submenu__sale-box(href="#") 
-								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale")
+								img.submenu__img(src="images/dist/menu-sale.jpg", alt="sale" width="255" height="118")
 								p.submenu__text Super sale!
 

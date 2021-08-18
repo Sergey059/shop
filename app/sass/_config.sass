@@ -11,7 +11,7 @@ $lato-bold: lato-bold, sans-serif // User Font Family
 $lato-black: lato-black, sans-serif // User Font Family
 $lato-italic: lato-italic, sans-serif // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
-$transition: 0.3s ease
+$transition: .3s ease
 $border-color: #ebebeb
 
 // IMPORT SECTION
@@ -26,6 +26,7 @@ $border-color: #ebebeb
 		font-style: $fstyle
 		font-weight: $fweight
 		src: url($furl) format('woff2')
+		font-display: 'swap'
 
 @include font('lato-regular', normal, 400, '../fonts/Lato-Regular.woff2')
 @include font('lato-light', normal, 200, '../fonts/Lato-Light.woff2')
